@@ -53,7 +53,7 @@ How to build a NFC based music box for children.
 
 ### Enable volumio ssh access
 
-* goto http://volumio.local/dev
+* goto http://music-box.local/dev
 * press the "Enable" button for SSH
 
 ### Copy Content to your Music Box 
