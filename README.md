@@ -13,7 +13,7 @@ How to build a NFC based music box for children.
 * download and install volumio: https://volumio.org/get-started/
 * e.g. for linux:
   * unzip the disk image `unzip volumio-2.502-2018-10-31-pi.img.zip` 
-  * insert the sd-card and find its path `lsblk`
+  * insert the sd-card and find its device `lsblk`
   * copy the image to sd-card, e.g. `sudo dd if=volumio-2.502-2018-10-31-pi.img of=/dev/mmcblk0`  
 * start, configure volumio, also see https://volumio.org/get-started/
   * on a Raspberry Pi with on-board WiFi, volumio will enable an AP called "Volumio"
@@ -22,7 +22,7 @@ How to build a NFC based music box for children.
   * open a browser http://volumio.local/
 * do the Volumio setup wizard
   * chose a language
-  * (re-)name your box, let's say to "music-box"
+  * (re-)name your box, let's say to **music-box**
     * important: later after reboot your box will not be available under http://volumio.local/ 
       but http://music-box.local/ 
   * configure audio output
@@ -58,7 +58,18 @@ How to build a NFC based music box for children.
 
 ### Copy Content to your Music Box 
 
-* put your music, audio books, etc. on your volumio
+* on the network Volumio exposes a couple of samba shares (windows shares)
+* e.g. on Windows in the windows explorer (the file manager) enter "\\music-box.local"
+* on Linux (when your file manager has a samba plugin) enter "smb://music-box.local"
+* one of the shares is called "Internal Storage"
+* just copy your music files there
+* Volumio will pick them up and add them to its music library automatically
+* also see https://volumio.github.io/docs/FAQs/Audio_Sources.html the very last
+  paragraph 
+* you can put your music, audio books, etc.
+* Volumio is able to play a various amount of formats, see: 
+  https://volumio.github.io/docs/FAQs/General.html the paragraph
+  "Readable formats"
 
 ### Create Playlists from you Content
 
