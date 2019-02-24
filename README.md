@@ -74,7 +74,7 @@ How to build a NFC based music box for children.
 ### Create Playlists from you Content
 
 * e.g. create one playlist per music album
-* create playlists in volumio
+* look for the keyword playlist in https://volumio.github.io/docs/User_Manual/More_first_steps.html
 
 ### Install NFC Reader Software on your Volumio
 
@@ -99,5 +99,66 @@ How to build a NFC based music box for children.
     Checking connectivity... done.
     volumio@music-box:~/devel$ cd MFRC522-trigger/
     volumio@music-box:~/devel/MFRC522-trigger$ cp config.json.sample config.json
-    ```
-* edit config.json accordingly, e.g. map NFC tag ids to volumio playlists
+    ```  
+* on your local machine also clone the repo https://github.com/layereight/MFRC522-trigger
+```
+$ git clone https://github.com/layereight/MFRC522-trigger.git
+$ cd MFRC522-trigger/ansible
+$ vi env/volumio/inventory
+```
+* replace the the contents of the file *inventory*
+```
+[volumio]
+music-box.local ansible_user=volumio ansible_ssh_pass=volumio ansible_sudo_pass=volumio
+```
+* execute the ansible playbook
+```
+$ ansible-playbook -i env/volumio/inventory MFRC522-trigger.yml 
+
+PLAY [Install MFRC522-trigger as systemd service] *******************************
+
+TASK [systemd : Copy custom systemd service file] *******************************
+changed: [volumio.local]
+
+TASK [systemd : Enable custom systemd service] **********************************
+changed: [volumio.local]
+
+TASK [systemd : Copy custom systemd service file] *******************************
+changed: [volumio.local]
+
+TASK [systemd : Enable custom systemd service] **********************************
+changed: [volumio.local]
+
+TASK [systemd : Copy custom systemd service file] *******************************
+skipping: [volumio.local]
+
+TASK [systemd : Enable custom systemd service] **********************************
+skipping: [volumio.local]
+
+PLAY RECAP **********************************************************************
+volumio.local              : ok=4    changed=4    unreachable=0    failed=0   
+
+```
+
+### Configure MFRC522-trigger to trigger a Volumio Playlist
+
+* ssh into your Volumio music box: `ssh volumio@music-box.local`
+* the software should be running, check whether the software is running
+```
+$ ps awwwx | grep python
+15269 ?        Ssl    0:03 /usr/bin/python /home/volumio/devel/MFRC522-trigger/MFRC522-trigger.py
+``` 
+* hold 1 or 2 NFC tags against your NFC reader
+* have a look a the MFRC522-trigger logfile, it should look something like this
+```
+$ cat ~/devel/MFRC522-trigger/MFRC522-trigger.log 
+2019-02-24 18:08:39,714 INFO Welcome to MFRC522-trigger!
+2019-02-24 18:08:39,716 INFO Press Ctrl-C to stop.
+2019-02-24 18:11:50,020 WARNING No mapping for tag 1364223230181
+2019-02-24 18:11:54,392 WARNING No mapping for tag 1364215230189
+```
+* note the NFC tag ids
+* edit MFRC522-trigger's config file: `vi ~/devel/MFRC522-trigger/config.json`
+* change config.json accordingly, e.g. map NFC tag ids to Volumio playlists
+* restart MFRC522-trigger `sudo systemctl restart MFRC522-trigger`
+* hold the same NFC tags again against the reader, actions should be triggered now
