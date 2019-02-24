@@ -59,7 +59,7 @@ How to build a NFC based music box for children.
 ### Copy Content to your Music Box 
 
 * on the network Volumio exposes a couple of samba shares (windows shares)
-* e.g. on Windows in the windows explorer (the file manager) enter "\\music-box.local"
+* e.g. on Windows in the windows explorer (the file manager) enter "\\\music-box.local"
 * on Linux (when your file manager has a samba plugin) enter "smb://music-box.local"
 * one of the shares is called "Internal Storage"
 * just copy your music files there
