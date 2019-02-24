@@ -78,11 +78,25 @@ How to build a NFC based music box for children.
 
 ### Install NFC Reader Software on your Volumio
 
-* install MFRC522-trigger software from https://github.com/layereight/MFRC522-trigger:
-* ssh into your music box
+* install MFRC522-trigger software from https://github.com/layereight/MFRC522-trigger
+* the purpose of the software is to detect NFS tags and call the volumio REST API to trigger certain
+  actions; e.g. play playlists, stop playback, ...
+* to do that, ssh into your music box
   * `ssh volumio@music-box.local`, default password is "volumio"
-  * `mkdir devel`
-  * `cd devel`
-  * `git clone https://github.com/layereight/MFRC522-trigger.git`
-* basically, the software detects NFS tags and calls the volumio REST API
+  * 
+    ```bash
+    volumio@music-box:~$ mkdir devel
+    volumio@music-box:~$ cd devel/
+    volumio@music-box:~/devel$ git clone https://github.com/layereight/MFRC522-trigger.git
+    Cloning into 'MFRC522-trigger'...
+    remote: Enumerating objects: 69, done.
+    remote: Counting objects: 100% (69/69), done.
+    remote: Compressing objects: 100% (46/46), done.
+    remote: Total 117 (delta 21), reused 56 (delta 12), pack-reused 48
+    Receiving objects: 100% (117/117), 263.56 KiB | 0 bytes/s, done.
+    Resolving deltas: 100% (40/40), done.
+    Checking connectivity... done.
+    volumio@music-box:~/devel$ cd MFRC522-trigger/
+    volumio@music-box:~/devel/MFRC522-trigger$ cp config.json.sample config.json
+    ```
 * edit config.json accordingly, e.g. map NFC tag ids to volumio playlists
