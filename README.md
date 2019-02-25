@@ -68,26 +68,6 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 * goto http://music-box.local/dev
 * press the "Enable" button for SSH
 
-### Copy Content to your Music Box 
-
-* on the network Volumio exposes a couple of samba shares (windows shares)
-* e.g. on Windows in the windows explorer (the file manager) enter "\\\music-box.local"
-* on Linux (when your file manager has a samba plugin) enter "smb://music-box.local"
-* one of the shares is called "Internal Storage"
-* just copy your music files there
-* Volumio will pick them up and add them to its music library automatically
-* also see https://volumio.github.io/docs/FAQs/Audio_Sources.html the very last
-  paragraph 
-* you can put your music, audio books, etc.
-* Volumio is able to play a various amount of formats, see: 
-  https://volumio.github.io/docs/FAQs/General.html the paragraph
-  "Readable formats"
-
-### Create Playlists from you Content
-
-* e.g. create one playlist per music album
-* look for the keyword playlist in https://volumio.github.io/docs/User_Manual/More_first_steps.html
-
 ### Install NFC Reader Software on your Volumio
 
 * install MFRC522-trigger software from https://github.com/layereight/MFRC522-trigger
@@ -151,6 +131,26 @@ PLAY RECAP *********************************************************************
 volumio.local              : ok=4    changed=4    unreachable=0    failed=0   
 
 ```
+
+### Copy Content to your Music Box
+
+* on the network Volumio exposes a couple of samba shares (windows shares)
+* e.g. on Windows in the windows explorer (the file manager) enter "\\\music-box.local"
+* on Linux (when your file manager has a samba plugin) enter "smb://music-box.local"
+* one of the shares is called "Internal Storage"
+* just copy your music files there
+* Volumio will pick them up and add them to its music library automatically
+* also see https://volumio.github.io/docs/FAQs/Audio_Sources.html the very last
+  paragraph
+* you can put your music, audio books, etc.
+* Volumio is able to play a various amount of formats, see:
+  https://volumio.github.io/docs/FAQs/General.html the paragraph
+  "Readable formats"
+
+### Create Playlists from you Content
+
+* e.g. create one playlist per music album
+* look for the keyword playlist in https://volumio.github.io/docs/User_Manual/More_first_steps.html
 
 ### Configure MFRC522-trigger to trigger a Volumio Playlist
 
