@@ -17,6 +17,10 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 ![Power Supply](images/powersupply.jpg?raw=true)
 ![USB Cable](images/usbcable.jpg?raw=true)
 
+### Assemble the Components
+
+* TODO
+
 ## Software
 
 ### Download, install and configure Volumio
@@ -174,3 +178,8 @@ $ cat ~/devel/MFRC522-trigger/MFRC522-trigger.log
 * change config.json accordingly, e.g. map NFC tag ids to Volumio playlists
 * restart MFRC522-trigger `sudo systemctl restart MFRC522-trigger`
 * hold the same NFC tags again against the reader, actions should be triggered now
+
+### pi-shutdown
+
+* https://github.com/layereight/pi-shutdown
+* TODO
