@@ -3,18 +3,17 @@
 This tutorial shows how to build a music box for kids based on Raspberry Pi and NFC tags.
 
 <!--ts-->
-   * [nfc-music-box](#nfc-music-box)
-      * [Hardware](#hardware)
-         * [Components](#components)
-         * [Assemble the Components](#assemble-the-components)
-      * [Software](#software)
-         * [Download, install and configure Volumio](#download-install-and-configure-volumio)
-         * [Enable volumio ssh access](#enable-volumio-ssh-access)
-         * [Install NFC Reader Software on your Volumio](#install-nfc-reader-software-on-your-volumio)
-         * [Copy Content to your Music Box](#copy-content-to-your-music-box)
-         * [Create Playlists from you Content](#create-playlists-from-you-content)
-         * [Configure MFRC522-trigger to trigger a Volumio Playlist](#configure-mfrc522-trigger-to-trigger-a-volumio-playlist)
-         * [pi-shutdown](#pi-shutdown)
+* [Hardware](#hardware)
+  * [Components](#components)
+  * [Assemble the Components](#assemble-the-components)
+* [Software](#software)
+  * [Download, install and configure Volumio](#download-install-and-configure-volumio)
+  * [Enable volumio ssh access](#enable-volumio-ssh-access)
+  * [Install NFC Reader Software on your Volumio](#install-nfc-reader-software-on-your-volumio)
+  * [Copy Content to your Music Box](#copy-content-to-your-music-box)
+  * [Create Playlists from you Content](#create-playlists-from-you-content)
+  * [Configure MFRC522-trigger to trigger a Volumio Playlist](#configure-mfrc522-trigger-to-trigger-a-volumio-playlist)
+  * [pi-shutdown](#pi-shutdown)
 
 <!-- Added by: stefan, at: 2019-02-26T00:54+01:00 -->
 
