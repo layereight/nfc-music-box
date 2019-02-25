@@ -1,10 +1,21 @@
 # nfc-music-box
 
-How to build a NFC based music box for children.
+This tutorial shows how to build a music box for kids based on Raspberry Pi and NFC tags.
 
 ## Hardware
 
-* TODO
+### Components
+
+![Raspberry Pi Zero W](images/pizerow.jpg?raw=true)
+![Hifiberry](images/hifiberry.jpg?raw=true)
+![SD Card](images/microsd.jpg?raw=true)
+![NFC Reader](images/nfcreader.jpg?raw=true)
+![NFC Tags](images/nfctags.jpg?raw=true)
+![Cable](images/cable.jpg?raw=true)
+![Speaker](images/speaker.jpg?raw=true)
+![Speaker Cable](images/speaker_cable.jpg?raw=true)
+![Power Supply](images/powersupply.jpg?raw=true)
+![USB Cable](images/usbcable.jpg?raw=true)
 
 ## Software
 
