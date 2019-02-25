@@ -27,8 +27,9 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
   * insert the sd-card and find its device `lsblk`
   * copy the image to sd-card, e.g. `sudo dd if=volumio-2.502-2018-10-31-pi.img of=/dev/mmcblk0`  
 * start, configure volumio, also see https://volumio.org/get-started/
-  * on a Raspberry Pi with on-board WiFi, volumio will enable an AP called "Volumio"
-  * when volumio boots up you should be able to the "Volumio" AP, e.g. from your Laptop
+  * on the very first boot of Volumio and on a Raspberry Pi with on-board WiFi, Volumio will enable
+    a Wifi Access Point called "Volumio"
+  * when Volumio boots up you should be able to see the "Volumio" AP, e.g. from your Laptop
   * connect to the "Volumio" AP, the default password is "volumio2"
   * open a browser http://volumio.local/
 * do the Volumio setup wizard
