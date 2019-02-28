@@ -23,10 +23,10 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 
 ### Components
 
-| Category | Item | Picture | Price | Links |
+| Category | Item | Picture | Price (EUR) | Links |
 | -------- | ---- | ------- | ----- | ----- |
-| Pi    | Raspberry Pi Zero W | ![Raspberry Pi Zero W](images/pizerow.jpg?raw=true) | 10.35 EUR - 17.49 EUR | https://www.sertronics-shop.de/raspberry-pi-zero-w https://www.conrad.de/de/raspberry-pi-zero-wh-512-mb-1667360.html |
-|       | Multi-pin Connector |  |  |  |
+| Pi    | Raspberry Pi Zero W | ![Raspberry Pi Zero W](images/01_pizerow.jpg?raw=true) | 10.35 - 17.49 | https://www.sertronics-shop.de/raspberry-pi-zero-w https://www.conrad.de/de/raspberry-pi-zero-wh-512-mb-1667360.html |
+|       | Multi-pin Connector | ![Multi-pin Connector](images/02_multipinconnector.jpg?raw=true) | 0.40 | https://www.sertronics-shop.de/bauelemente/steckverbinder/stift-buchsenleisten-jumper/stiftleiste-2x-20-polig-rm-2-54-gerade |
 |       | MicroSD Card (min. 8GB) |  |  |  |
 | NFC   | RC522 NFC Reader |  |  |  |
 |       | NFC Tags |  |  |  |
@@ -36,12 +36,19 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 | Power | Powerbank (charge-through/pass-through !!!) |  |  |  |
 |       | Elko 4700 µF 6.3V |  |  |  |
 |       | Spule 33 µH 1,5A |  |  |  |
-|       |  |  |  |  |
-|       |  |  |  |  |
-|       |  |  |  |  |
-| Misc  |  |  |  |  |
-|       |  |  |  |  |
-|       |  |  |  |  |
+|       | Micro-USB Netzteil |  |  |  |
+|       | Micro-USB Cable |  |  |  |
+|       | Micro-USB Buchse zum Einbau |  |  |  |
+| Misc  | 4x Spacer 10mm |  |  |  |
+|       | 8x Schraube mit Flansch 5mm |  |  |  |
+|       | 8x Unterlegscheibe |  |  |  |
+|       | Dupont Kabel male male |  |  |  |
+|       | Dupont Kabel female female |  |  |  |
+|       | Kippschalter Ein - Aus |  |  |  |
+|       | Drucktaster |  |  |  |
+|       | 1x LED |  |  |  |
+| Other | Case |  |  |  |
+|       | Figures |  |  |  |
 
 ![Raspberry Pi Zero W](images/pizerow.jpg?raw=true)
 ![Hifiberry](images/hifiberry.jpg?raw=true)
