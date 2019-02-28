@@ -45,7 +45,7 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 | Dupont Jump Wire female/female | ![Jump Wire female](images/18_jumpwirefemale.jpg?raw=true) | 2.90 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/kabel-adapter/gpio-csi-dsi-kabel/40pin-jumper/dupont-kabel-female-female-trennbar</li></ul> |
 | Switch | ![Switch](images/19_switch.jpg?raw=true) | 0.55 | <ul> <li>https://www.sertronics-shop.de/bauelemente/schalter-taster/kippschalter/subminiatur-kippschalter-2-pin-ein-aus</li></ul> |
 | Push Button | ![Push Button](images/20_pushbutton.jpg?raw=true) | 0.48 | <ul> <li>https://www.sertronics-shop.de/bauelemente/schalter-taster/drucktaster/mini-drucktaster-1-polig-schliesser</li></ul> |
-| 1x LED |  |  | <ul> <li> </li></ul> |
+| 1x LED | ![LED](images/21_led.jpg?raw=true) | 0.10 | <ul> <li>https://www.conrad.de/de/everlight-opto-333-2sygds530-e2-led-bedrahtet-gruen-rund-5-mm-80-mcd-30-20-ma-2-v-156238.html</li></ul> |
 | Case |  |  | <ul> <li> </li></ul> |
 | Figures |  |  | <ul> <li> </li></ul> |
 
