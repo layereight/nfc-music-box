@@ -46,8 +46,8 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 | Switch | ![Switch](images/19_switch.jpg?raw=true) | 0.55 | <ul> <li>https://www.sertronics-shop.de/bauelemente/schalter-taster/kippschalter/subminiatur-kippschalter-2-pin-ein-aus</li></ul> |
 | Push Button | ![Push Button](images/20_pushbutton.jpg?raw=true) | 0.48 | <ul> <li>https://www.sertronics-shop.de/bauelemente/schalter-taster/drucktaster/mini-drucktaster-1-polig-schliesser</li></ul> |
 | 1x LED | ![LED](images/21_led.jpg?raw=true) | 0.10 | <ul> <li>https://www.conrad.de/de/everlight-opto-333-2sygds530-e2-led-bedrahtet-gruen-rund-5-mm-80-mcd-30-20-ma-2-v-156238.html</li></ul> |
-| Case |  |  | <ul> <li> </li></ul> |
-| Figures |  |  | <ul> <li> </li></ul> |
+| Case | ![Case](images/22_case.jpg?raw=true) |  | Possibilities are limitless. :-) See https://github.com/MiczFlor/RPi-Jukebox-RFID/issues/5 (beware, very long loading time) for some inspiration. |
+| Figures | ![Figure](images/23_figure.jpg?raw=true) |  | Optional. In case you wanna have physical objects you can attach your NFC stickers to. Again possibilities are limitless. |
 
 
 ![Speaker Cable](images/speaker_cable.jpg?raw=true)
