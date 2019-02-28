@@ -23,38 +23,34 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 
 ### Components
 
-| Category | Item | Picture | Price (EUR) | Links |
-| -------- | ---- | ------- | ----- | ----- |
-| Pi    | Raspberry Pi Zero W | ![Raspberry Pi Zero W](images/01_pizerow.jpg?raw=true) | 10.35 - 17.49 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-zero-w</li> <li>https://www.conrad.de/de/raspberry-pi-zero-wh-512-mb-1667360.html</li> </ul> |
-|       | Multi-pin Connector | ![Multi-pin Connector](images/02_multipinconnector.jpg?raw=true) | 0.40 | <ul> <li>https://www.sertronics-shop.de/bauelemente/steckverbinder/stift-buchsenleisten-jumper/stiftleiste-2x-20-polig-rm-2-54-gerade</li> </ul> |
-|       | MicroSD Card (min. 8GB) | ![MicroSD Card](images/03_microsd.jpg?raw=true) | 4.99 - 7.85 | <ul> <li>https://www.conrad.de/de/transcend-premium-400x-microsdhc-karte-16-gb-class-10-uhs-i-284235.html</li> <li>https://www.sertronics-shop.de/computer/speicherkarten-usb-sticks/microsd-karten/sandisk-ultra-micro-sdhc-a1-98mb/s-class-10-speicherkarte-adapter-16gb</li> </ul> |
-| NFC   | RC522 NFC Reader | ![NFC Reader](images/04_nfcreader.jpg?raw=true) | 3.80 - 4.99 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/module-sensoren/rfid-lesegeraet-mit-spi-schnittstelle-inkl.-karte-dongle</li> <li>https://www.amazon.de/AZDelivery-Reader-Arduino-Raspberry-gratis/dp/B01M28JAAZ/ref=sr_1_fkmr0_2?ie=UTF8&qid=1544891440&sr=8-2-fkmr0&keywords=rfid%2Bleseger%C3%A4t%2BMFRC522&th=1</li> </ul> |
-|       | NFC Tags |  |  |  |
-| Sound | Hifiberry MiniAmp |  |  |  |
-|       | 2x Speakers 3W |  |  |  |
-|       | Speaker Cable |  |  |  |
-| Power | Powerbank (charge-through/pass-through !!!) |  |  |  |
-|       | Elko 4700 µF 6.3V |  |  |  |
-|       | Spule 33 µH 1,5A |  |  |  |
-|       | Micro-USB Netzteil |  |  |  |
-|       | Micro-USB Cable |  |  |  |
-|       | Micro-USB Buchse zum Einbau |  |  |  |
-| Misc  | 4x Spacer 10mm |  |  |  |
-|       | 8x Schraube mit Flansch 5mm |  |  |  |
-|       | 8x Unterlegscheibe |  |  |  |
-|       | Dupont Kabel male male |  |  |  |
-|       | Dupont Kabel female female |  |  |  |
-|       | Kippschalter Ein - Aus |  |  |  |
-|       | Drucktaster |  |  |  |
-|       | 1x LED |  |  |  |
-| Other | Case |  |  |  |
-|       | Figures |  |  |  |
+| Item | Picture | Price (EUR) | Links |
+| ---- | ------- | ----- | ----- |
+| Raspberry Pi Zero W | ![Raspberry Pi Zero W](images/01_pizerow.jpg?raw=true) | 10.35 - 17.49 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-zero-w</li> <li>https://www.conrad.de/de/raspberry-pi-zero-wh-512-mb-1667360.html</li> </ul> |
+| Multi-pin Connector | ![Multi-pin Connector](images/02_multipinconnector.jpg?raw=true) | 0.40 | <ul> <li>https://www.sertronics-shop.de/bauelemente/steckverbinder/stift-buchsenleisten-jumper/stiftleiste-2x-20-polig-rm-2-54-gerade</li> </ul> |
+| MicroSD Card (min. 8GB) | ![MicroSD Card](images/03_microsd.jpg?raw=true) | 4.99 - 7.85 | <ul> <li>https://www.conrad.de/de/transcend-premium-400x-microsdhc-karte-16-gb-class-10-uhs-i-284235.html</li> <li>https://www.sertronics-shop.de/computer/speicherkarten-usb-sticks/microsd-karten/sandisk-ultra-micro-sdhc-a1-98mb/s-class-10-speicherkarte-adapter-16gb</li> </ul> |
+| RC522 NFC Reader | ![NFC Reader](images/04_nfcreader.jpg?raw=true) | 3.80 - 4.99 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/module-sensoren/rfid-lesegeraet-mit-spi-schnittstelle-inkl.-karte-dongle</li> <li>https://www.amazon.de/AZDelivery-Reader-Arduino-Raspberry-gratis/dp/B01M28JAAZ/ref=sr_1_fkmr0_2?ie=UTF8&qid=1544891440&sr=8-2-fkmr0&keywords=rfid%2Bleseger%C3%A4t%2BMFRC522&th=1</li> </ul> |
+| NFC Tags | ![NFC Tags](images/05_nfctag.jpg?raw=true) | 0.69 - 1.10 | <ul> <li>https://www.shopnfc.com/de/nfc-stickers/32-12mm-micro-ntag213-stickers.html</li> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/sonstiges/rfid-aufkleber-rund-oe30mm-13-56mhz-1kb</li> <li>https://www.amazon.de/gp/product/B07G42RD2R/ref=oh_aui_detailpage_o05_s01?ie=UTF8&psc=1</li> </ul> |
+| Hifiberry MiniAmp |  |  |  |
+| 2x Speakers 3W |  |  |  |
+| Speaker Cable |  |  |  |
+| Powerbank (charge-through/pass-through !!!) |  |  |  |
+| Elko 4700 µF 6.3V |  |  |  |
+| Spule 33 µH 1,5A |  |  |  |
+| Micro-USB Netzteil |  |  |  |
+| Micro-USB Cable |  |  |  |
+| Micro-USB Buchse zum Einbau |  |  |  |
+| 4x Spacer 10mm |  |  |  |
+| 8x Schraube mit Flansch 5mm |  |  |  |
+| 8x Unterlegscheibe |  |  |  |
+| Dupont Kabel male male |  |  |  |
+| Dupont Kabel female female |  |  |  |
+| Kippschalter Ein - Aus |  |  |  |
+| Drucktaster |  |  |  |
+| 1x LED |  |  |  |
+| Case |  |  |  |
+| Figures |  |  |  |
 
-![Raspberry Pi Zero W](images/pizerow.jpg?raw=true)
 ![Hifiberry](images/hifiberry.jpg?raw=true)
-![SD Card](images/microsd.jpg?raw=true)
-
-![NFC Tags](images/nfctags.jpg?raw=true)
 ![Cable](images/cable.jpg?raw=true)
 ![Speaker](images/speaker.jpg?raw=true)
 ![Speaker Cable](images/speaker_cable.jpg?raw=true)
