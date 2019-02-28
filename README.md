@@ -51,7 +51,9 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 | Figures | ![Figure](images/23_figure.jpg?raw=true) |  | Optional. In case you wanna have physical objects you can attach your NFC stickers to. Again possibilities are limitless. |
 
 
+### Wiring Diagram
 
+![Music Box Wiring Diagram](images/musicbox_bb.jpg?raw=true)
 
 ### Assemble the Components
 
