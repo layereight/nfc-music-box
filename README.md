@@ -27,7 +27,7 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 | -------- | ---- | ------- | ----- | ----- |
 | Pi    | Raspberry Pi Zero W | ![Raspberry Pi Zero W](images/01_pizerow.jpg?raw=true) | 10.35 - 17.49 | https://www.sertronics-shop.de/raspberry-pi-zero-w https://www.conrad.de/de/raspberry-pi-zero-wh-512-mb-1667360.html |
 |       | Multi-pin Connector | ![Multi-pin Connector](images/02_multipinconnector.jpg?raw=true) | 0.40 | https://www.sertronics-shop.de/bauelemente/steckverbinder/stift-buchsenleisten-jumper/stiftleiste-2x-20-polig-rm-2-54-gerade |
-|       | MicroSD Card (min. 8GB) |  |  |  |
+|       | MicroSD Card (min. 8GB) | ![MicroSD Card](images/03_microsd.jpg?raw=true) | 4.99 - 7.85 | https://www.conrad.de/de/transcend-premium-400x-microsdhc-karte-16-gb-class-10-uhs-i-284235.html https://www.sertronics-shop.de/computer/speicherkarten-usb-sticks/microsd-karten/sandisk-ultra-micro-sdhc-a1-98mb/s-class-10-speicherkarte-adapter-16gb |
 | NFC   | RC522 NFC Reader |  |  |  |
 |       | NFC Tags |  |  |  |
 | Sound | Hifiberry MiniAmp |  |  |  |
