@@ -23,6 +23,26 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 
 ### Components
 
+| Category | Item | Picture | Price | Links |
+| -------- | ---- | ------- | ----- | ----- |
+| Pi    | Raspberry Pi Zero W | ![Raspberry Pi Zero W](images/pizerow.jpg?raw=true) | 10.35 EUR - 17.49 EUR | https://www.sertronics-shop.de/raspberry-pi-zero-w https://www.conrad.de/de/raspberry-pi-zero-wh-512-mb-1667360.html |
+|       | Multi-pin Connector |  |  |  |
+|       | MicroSD Card (min. 8GB) |  |  |  |
+| NFC   | RC522 NFC Reader |  |  |  |
+|       | NFC Tags |  |  |  |
+| Sound | Hifiberry MiniAmp |  |  |  |
+|       | 2x Speakers 3W |  |  |  |
+|       | Speaker Cable |  |  |  |
+| Power | Powerbank (charge-through/pass-through !!!) |  |  |  |
+|       | Elko 4700 µF 6.3V |  |  |  |
+|       | Spule 33 µH 1,5A |  |  |  |
+|       |  |  |  |  |
+|       |  |  |  |  |
+|       |  |  |  |  |
+| Misc  |  |  |  |  |
+|       |  |  |  |  |
+|       |  |  |  |  |
+
 ![Raspberry Pi Zero W](images/pizerow.jpg?raw=true)
 ![Hifiberry](images/hifiberry.jpg?raw=true)
 ![SD Card](images/microsd.jpg?raw=true)
