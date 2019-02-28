@@ -37,8 +37,8 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 | 2x E Capacitor 4700 µF 6.3V | ![E Capacitor](images/10_ecapacitor.jpg?raw=true) | 0.37 - 2.09 | <ul> <li>https://www.conrad.de/de/yageo-sy006m4700b5s-1330-elektrolyt-kondensator-radial-bedrahtet-5-mm-4700-f-63-v-20-o-x-h-13-mm-x-30-mm-1-st-442651.html</li> <li>https://www.exp-tech.de/zubehoer/halbleiter/7830/4700uf-10v-elektrolytkondensator</li></ul> |
 | Inductor 33 µH 1,5A | ![Inductor](images/11_inductor.jpg?raw=true) | 0.41 | <ul> <li>https://www.conrad.de/de/tru-components-tc-07hcp-330m-50203-induktivitaet-radial-bedrahtet-rastermass-5-mm-33-h-15-a-1-st-1589089.html</li></ul> |
 | Micro-USB Power Supply | ![Power Supply](images/12_powersupply.jpg?raw=true) | 6.99 - | <ul> <li>https://www.conrad.de/de/hn-power-hnp06-microusbl6-hnp06-microusbl6-usb-ladegeraet-steckdose-ausgangsstrom-max-1500-ma-1-x-micro-usb-stabilisie-1527545.html</li> <li>https://www.amazon.de/Aukru-Netzadapter-Ladeger%C3%A4t-Raspberry-Motorola/dp/B013FOYNSM/ref=sr_1_3?ie=UTF8&qid=1551363590&sr=8-3&keywords=micro+usb+netzteil</li></ul> |
-| Micro-USB Buchse zum Einbau |  |  | <ul> <li> </li></ul> |
-| 4x Spacer 10mm |  |  | <ul> <li> </li></ul> |
+| Micro-USB Jack | ![Micro USB Jack](images/13_microusbjack.jpg?raw=true) | 3.10 | <ul> <li>https://www.sertronics-shop.de/computer/kabel-adapter/usb/micro-usb/kabel-usb-2.0-micro-b-buchse-zum-einbau-usb-2.0-micro-b-stecker-25-cm</li></ul> |
+| 4x Spacer 10mm | ![Spacer](images/14_spacer.jpg?raw=true) | 0.92 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/bauelemente/abstandshuelse-metal-mit-gewinde-innen-m2-5?number=TFF-M2.5X10</li></ul> |
 | 8x Schraube mit Flansch 5mm |  |  | <ul> <li> </li></ul> |
 | 8x Unterlegscheibe |  |  | <ul> <li> </li></ul> |
 | Dupont Kabel male male |  |  | <ul> <li> </li></ul> |
@@ -52,8 +52,6 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 
 ![Cable](images/cable.jpg?raw=true)
 ![Speaker Cable](images/speaker_cable.jpg?raw=true)
-![Power Supply](images/powersupply.jpg?raw=true)
-![USB Cable](images/usbcable.jpg?raw=true)
 
 ### Assemble the Components
 
