@@ -5,6 +5,7 @@ Todo
 * update 2 docus
 * pi-shutdown
 * roadmap MFRC522-trigger
+* add resistor to shopping list
 
 Done
 
