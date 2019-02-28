@@ -1,7 +1,12 @@
-* raspi wiring diagram
-* component shopping list
+Todo
+
 * hardware assembly docu
 * more hardware photos - Camera !!!
 * update 2 docus
 * pi-shutdown
 * roadmap MFRC522-trigger
+
+Done
+
+* component shopping list
+* raspi wiring diagram
