@@ -5,6 +5,7 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 <!--ts-->
 * [Hardware](#hardware)
   * [Components](#components)
+  * [Wiring Diagram](#wiring-diagram)
   * [Assemble the Components](#assemble-the-components)
 * [Software](#software)
   * [Download, install and configure Volumio](#download-install-and-configure-volumio)
