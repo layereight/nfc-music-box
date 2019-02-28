@@ -30,29 +30,28 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 | MicroSD Card (min. 8GB) | ![MicroSD Card](images/03_microsd.jpg?raw=true) | 4.99 - 7.85 | <ul> <li>https://www.conrad.de/de/transcend-premium-400x-microsdhc-karte-16-gb-class-10-uhs-i-284235.html</li> <li>https://www.sertronics-shop.de/computer/speicherkarten-usb-sticks/microsd-karten/sandisk-ultra-micro-sdhc-a1-98mb/s-class-10-speicherkarte-adapter-16gb</li> </ul> |
 | RC522 NFC Reader | ![NFC Reader](images/04_nfcreader.jpg?raw=true) | 3.80 - 4.99 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/module-sensoren/rfid-lesegeraet-mit-spi-schnittstelle-inkl.-karte-dongle</li> <li>https://www.amazon.de/AZDelivery-Reader-Arduino-Raspberry-gratis/dp/B01M28JAAZ/ref=sr_1_fkmr0_2?ie=UTF8&qid=1544891440&sr=8-2-fkmr0&keywords=rfid%2Bleseger%C3%A4t%2BMFRC522&th=1</li> </ul> |
 | NFC Tags | ![NFC Tags](images/05_nfctag.jpg?raw=true) | 0.69 - 1.10 | <ul> <li>https://www.shopnfc.com/de/nfc-stickers/32-12mm-micro-ntag213-stickers.html</li> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/sonstiges/rfid-aufkleber-rund-oe30mm-13-56mhz-1kb</li> <li>https://www.amazon.de/gp/product/B07G42RD2R/ref=oh_aui_detailpage_o05_s01?ie=UTF8&psc=1</li> </ul> |
-| Hifiberry MiniAmp |  |  |  |
-| 2x Speakers 3W |  |  |  |
-| Speaker Cable |  |  |  |
-| Powerbank (charge-through/pass-through !!!) |  |  |  |
-| Elko 4700 µF 6.3V |  |  |  |
-| Spule 33 µH 1,5A |  |  |  |
-| Micro-USB Netzteil |  |  |  |
-| Micro-USB Cable |  |  |  |
-| Micro-USB Buchse zum Einbau |  |  |  |
-| 4x Spacer 10mm |  |  |  |
-| 8x Schraube mit Flansch 5mm |  |  |  |
-| 8x Unterlegscheibe |  |  |  |
-| Dupont Kabel male male |  |  |  |
-| Dupont Kabel female female |  |  |  |
-| Kippschalter Ein - Aus |  |  |  |
-| Drucktaster |  |  |  |
-| 1x LED |  |  |  |
-| Case |  |  |  |
-| Figures |  |  |  |
+| Hifiberry MiniAmp | ![Hifiberry](images/06_hifiberry.jpg?raw=true) | 13.90 - 20.90 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/erweiterungsboards/hifiberry/hifiberry-miniamp</li> <li>https://www.hifiberry.com/shop/boards/miniamp/</li> </ul> |
+| 2x Speakers 3W | ![Speaker](images/07_speaker.jpg?raw=true) | 5.24 - 9.32 | <ul> <li>https://www.exp-tech.de/zubehoer/audio/5921/lautsprecher-3-durchmesser-4-ohm-3-watt</li> <li>https://www.amazon.de/Adafruit-Speaker-Diameter-Watt-ADA1314/dp/B00QSIYXLK/ref=sr_1_22?s=ce-de&ie=UTF8&qid=1544892282&sr=1-22&keywords=3w+lautsprecher</li></ul> |
+| Speaker Cable |  |  | <ul> <li> </li></ul> |
+| Powerbank (charge-through/pass-through !!!) |  |  | <ul> <li> </li></ul> |
+| Elko 4700 µF 6.3V |  |  | <ul> <li> </li></ul> |
+| Spule 33 µH 1,5A |  |  | <ul> <li> </li></ul> |
+| Micro-USB Netzteil |  |  | <ul> <li> </li></ul> |
+| Micro-USB Cable |  |  | <ul> <li> </li></ul> |
+| Micro-USB Buchse zum Einbau |  |  | <ul> <li> </li></ul> |
+| 4x Spacer 10mm |  |  | <ul> <li> </li></ul> |
+| 8x Schraube mit Flansch 5mm |  |  | <ul> <li> </li></ul> |
+| 8x Unterlegscheibe |  |  | <ul> <li> </li></ul> |
+| Dupont Kabel male male |  |  | <ul> <li> </li></ul> |
+| Dupont Kabel female female |  |  | <ul> <li> </li></ul> |
+| Kippschalter Ein - Aus |  |  | <ul> <li> </li></ul> |
+| Drucktaster |  |  | <ul> <li> </li></ul> |
+| 1x LED |  |  | <ul> <li> </li></ul> |
+| Case |  |  | <ul> <li> </li></ul> |
+| Figures |  |  | <ul> <li> </li></ul> |
 
-![Hifiberry](images/hifiberry.jpg?raw=true)
+
 ![Cable](images/cable.jpg?raw=true)
-![Speaker](images/speaker.jpg?raw=true)
 ![Speaker Cable](images/speaker_cable.jpg?raw=true)
 ![Power Supply](images/powersupply.jpg?raw=true)
 ![USB Cable](images/usbcable.jpg?raw=true)
