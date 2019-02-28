@@ -32,7 +32,7 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 | NFC Tags | ![NFC Tags](images/05_nfctag.jpg?raw=true) | 0.69 - 1.10 | <ul> <li>https://www.shopnfc.com/de/nfc-stickers/32-12mm-micro-ntag213-stickers.html</li> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/sonstiges/rfid-aufkleber-rund-oe30mm-13-56mhz-1kb</li> <li>https://www.amazon.de/gp/product/B07G42RD2R/ref=oh_aui_detailpage_o05_s01?ie=UTF8&psc=1</li> </ul> |
 | Hifiberry MiniAmp | ![Hifiberry](images/06_hifiberry.jpg?raw=true) | 13.90 - 20.90 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/erweiterungsboards/hifiberry/hifiberry-miniamp</li> <li>https://www.hifiberry.com/shop/boards/miniamp/</li> </ul> |
 | 2x Speakers 3W | ![Speaker](images/07_speaker.jpg?raw=true) | 5.24 - 9.32 | <ul> <li>https://www.exp-tech.de/zubehoer/audio/5921/lautsprecher-3-durchmesser-4-ohm-3-watt</li> <li>https://www.amazon.de/Adafruit-Speaker-Diameter-Watt-ADA1314/dp/B00QSIYXLK/ref=sr_1_22?s=ce-de&ie=UTF8&qid=1544892282&sr=1-22&keywords=3w+lautsprecher</li></ul> |
-| Speaker Cable |  |  | <ul> <li> </li></ul> |
+| Speaker Cable | ![Speaker Cable](images/08_speakercable.jpg?raw=true) |  | Optional. Simple copper wire might be enough for 3W speakers. <ul> <li>https://www.sertronics-shop.de/audio-video/verlegekabel-rollenware/lautsprecherkabel/lautsprecherkabel-transparent-cu-25-m-querschnitt-2-x-0-75-mm2</li></ul> |
 | Powerbank (charge-through/pass-through) | ![Powerbank](images/09_powerbank.jpg?raw=true) | 11.99 - 13.49 | <ul>https://www.conrad.de/de/intenso-slim-s-10000-powerbank-zusatzakku-lipo-10000-mah-1387339.html</li> <li>https://www.amazon.de/Intenso-Powerbank-Ladeger%C3%A4t-Smartphone-Digitalkamera-schwarz/dp/B015CIZEF0/ref=sr_1_cc_1?s=aps&ie=UTF8&qid=1544891786&sr=1-1-catcorr&keywords=Intenso%2BSlim%2B10000&th=1</li></ul> |
 | 2x E Capacitor 4700 µF 6.3V | ![E Capacitor](images/10_ecapacitor.jpg?raw=true) | 0.37 - 2.09 | <ul> <li>https://www.conrad.de/de/yageo-sy006m4700b5s-1330-elektrolyt-kondensator-radial-bedrahtet-5-mm-4700-f-63-v-20-o-x-h-13-mm-x-30-mm-1-st-442651.html</li> <li>https://www.exp-tech.de/zubehoer/halbleiter/7830/4700uf-10v-elektrolytkondensator</li></ul> |
 | Inductor 33 µH 1,5A | ![Inductor](images/11_inductor.jpg?raw=true) | 0.41 | <ul> <li>https://www.conrad.de/de/tru-components-tc-07hcp-330m-50203-induktivitaet-radial-bedrahtet-rastermass-5-mm-33-h-15-a-1-st-1589089.html</li></ul> |
@@ -51,7 +51,7 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 | Figures | ![Figure](images/23_figure.jpg?raw=true) |  | Optional. In case you wanna have physical objects you can attach your NFC stickers to. Again possibilities are limitless. |
 
 
-![Speaker Cable](images/speaker_cable.jpg?raw=true)
+
 
 ### Assemble the Components
 
