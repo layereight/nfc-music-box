@@ -25,10 +25,10 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 
 | Category | Item | Picture | Price (EUR) | Links |
 | -------- | ---- | ------- | ----- | ----- |
-| Pi    | Raspberry Pi Zero W | ![Raspberry Pi Zero W](images/01_pizerow.jpg?raw=true) | 10.35 - 17.49 | https://www.sertronics-shop.de/raspberry-pi-zero-w https://www.conrad.de/de/raspberry-pi-zero-wh-512-mb-1667360.html |
-|       | Multi-pin Connector | ![Multi-pin Connector](images/02_multipinconnector.jpg?raw=true) | 0.40 | https://www.sertronics-shop.de/bauelemente/steckverbinder/stift-buchsenleisten-jumper/stiftleiste-2x-20-polig-rm-2-54-gerade |
-|       | MicroSD Card (min. 8GB) | ![MicroSD Card](images/03_microsd.jpg?raw=true) | 4.99 - 7.85 | https://www.conrad.de/de/transcend-premium-400x-microsdhc-karte-16-gb-class-10-uhs-i-284235.html https://www.sertronics-shop.de/computer/speicherkarten-usb-sticks/microsd-karten/sandisk-ultra-micro-sdhc-a1-98mb/s-class-10-speicherkarte-adapter-16gb |
-| NFC   | RC522 NFC Reader |  |  |  |
+| Pi    | Raspberry Pi Zero W | ![Raspberry Pi Zero W](images/01_pizerow.jpg?raw=true) | 10.35 - 17.49 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-zero-w</li> <li>https://www.conrad.de/de/raspberry-pi-zero-wh-512-mb-1667360.html</li> </ul> |
+|       | Multi-pin Connector | ![Multi-pin Connector](images/02_multipinconnector.jpg?raw=true) | 0.40 | <ul> <li>https://www.sertronics-shop.de/bauelemente/steckverbinder/stift-buchsenleisten-jumper/stiftleiste-2x-20-polig-rm-2-54-gerade</li> </ul> |
+|       | MicroSD Card (min. 8GB) | ![MicroSD Card](images/03_microsd.jpg?raw=true) | 4.99 - 7.85 | <ul> <li>https://www.conrad.de/de/transcend-premium-400x-microsdhc-karte-16-gb-class-10-uhs-i-284235.html</li> <li>https://www.sertronics-shop.de/computer/speicherkarten-usb-sticks/microsd-karten/sandisk-ultra-micro-sdhc-a1-98mb/s-class-10-speicherkarte-adapter-16gb</li> </ul> |
+| NFC   | RC522 NFC Reader | ![NFC Reader](images/04_nfcreader.jpg?raw=true) | 3.80 - 4.99 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/module-sensoren/rfid-lesegeraet-mit-spi-schnittstelle-inkl.-karte-dongle</li> <li>https://www.amazon.de/AZDelivery-Reader-Arduino-Raspberry-gratis/dp/B01M28JAAZ/ref=sr_1_fkmr0_2?ie=UTF8&qid=1544891440&sr=8-2-fkmr0&keywords=rfid%2Bleseger%C3%A4t%2BMFRC522&th=1</li> </ul> |
 |       | NFC Tags |  |  |  |
 | Sound | Hifiberry MiniAmp |  |  |  |
 |       | 2x Speakers 3W |  |  |  |
@@ -53,7 +53,7 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 ![Raspberry Pi Zero W](images/pizerow.jpg?raw=true)
 ![Hifiberry](images/hifiberry.jpg?raw=true)
 ![SD Card](images/microsd.jpg?raw=true)
-![NFC Reader](images/nfcreader.jpg?raw=true)
+
 ![NFC Tags](images/nfctags.jpg?raw=true)
 ![Cable](images/cable.jpg?raw=true)
 ![Speaker](images/speaker.jpg?raw=true)
