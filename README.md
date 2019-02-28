@@ -43,14 +43,13 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 | 8x Washer | ![Washer](images/16_washer.jpg?raw=true) | 0.24 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/bauelemente/unterlegscheibe-kunstoff-rund-m2-5-d6mm-h0-5mm</li></ul> |
 | Dupont Jump Wire male/male | ![Jump Wire male](images/17_jumpwiremale.jpg?raw=true) | 2.90 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/kabel-adapter/gpio-csi-dsi-kabel/40pin-jumper/dupont-kabel-male-male-trennbar</li></ul> |
 | Dupont Jump Wire female/female | ![Jump Wire female](images/18_jumpwirefemale.jpg?raw=true) | 2.90 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/kabel-adapter/gpio-csi-dsi-kabel/40pin-jumper/dupont-kabel-female-female-trennbar</li></ul> |
-| Kippschalter Ein - Aus |  |  | <ul> <li> </li></ul> |
-| Drucktaster |  |  | <ul> <li> </li></ul> |
+| Switch | ![Switch](images/19_switch.jpg?raw=true) | 0.55 | <ul> <li>https://www.sertronics-shop.de/bauelemente/schalter-taster/kippschalter/subminiatur-kippschalter-2-pin-ein-aus</li></ul> |
+| Push Button | ![Push Button](images/20_pushbutton.jpg?raw=true) | 0.48 | <ul> <li>https://www.sertronics-shop.de/bauelemente/schalter-taster/drucktaster/mini-drucktaster-1-polig-schliesser</li></ul> |
 | 1x LED |  |  | <ul> <li> </li></ul> |
 | Case |  |  | <ul> <li> </li></ul> |
 | Figures |  |  | <ul> <li> </li></ul> |
 
 
-![Cable](images/cable.jpg?raw=true)
 ![Speaker Cable](images/speaker_cable.jpg?raw=true)
 
 ### Assemble the Components
