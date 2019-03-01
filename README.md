@@ -51,14 +51,55 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 | Case | ![Case](images/22_case.jpg?raw=true) |  | Possibilities are limitless. :-) See https://github.com/MiczFlor/RPi-Jukebox-RFID/issues/5 (beware, very long loading time) for some inspiration. |
 | Figures | ![Figure](images/23_figure.jpg?raw=true) |  | Optional. In case you wanna have physical objects you can attach your NFC stickers to. Again possibilities are limitless. |
 
-
 ### Wiring Diagram
 
 ![Music Box Wiring Diagram](images/musicbox_bb.jpg?raw=true)
 
 ### Assemble the Components
 
+Since the Hifiberry Amplifier will take the whole multi-pin connector on the upper side of the Raspberry Pi, we will
+have to solder all the other connections to the bottom side. So when it comes to pin numbering you will always have
+to think upside down.
+
+#### Multi-Pin Connector
+
+* solder the multi-pin connector to the Raspberry Pi, it's 40 pins, so a good warm-up ;-)
+
+#### Speaker Cable
+
+* cut 2 times the right length of speaker cable (or just standard copper wire) for the speakers
+* dismantle and tin-coat all 8 ends
+* solder the cables to the speakers (if you have speaker cable, the + is usually marked in red)
+
+#### NFC Reader
+
+* there is a 8-pin connector for the NFC reader board, that we need to solder
+* depending where and how you wanna put the NFC reader in you case later, you have do decide to which side of the board
+  the connector should face
 * TODO
+
+#### Status LED
+
+* first solder the resistor to the LED, since they are connected in series it doesn't matter which side (anode + or cathode -)
+* cut 2 times the right length of copper wire, the length depends on what ranges you will have to span in your case later
+* dismantle and tin-coat all 4 ends
+* first solder one cable to the open end of the LED, and the other cable to the resistor that is already connected to the led
+* now when soldering the cables to the Raspberry Pi, you will have to consider the polarity of the LED
+* the cathode (-) is the side with the slidely shorter pin that is also flat on the LED's head
+* the anode (+) is simply the other side
+* the cable on the cathode side of the LED goes to pin 14 (GND)
+* the cable on the anode side of the LED goes to pin 8
+
+#### Push Button
+
+* cut 2 times the right length of copper wire, the length depends on what ranges you will have to span in your case later
+* dismantle and tin-coat all 4 ends
+
+#### Power Supply Buffer
+
+* TODO
+
+* TODO: add photos
 
 ## Software
 
