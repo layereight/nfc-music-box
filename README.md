@@ -76,7 +76,24 @@ to think upside down.
 * there is a 8-pin connector for the NFC reader board, that we need to solder
 * depending where and how you wanna put the NFC reader in you case later, you have do decide to which side of the board
   the connector should face
-* TODO
+* solder 8x male/male jump wire to the Raspberry Pi
+  * pin 17 red
+  * pin 19 orange
+  * pin 21 green
+  * pin 23 yellow
+  * pin 18 brown
+  * pin 20 black
+  * pin 22 blue
+  * pin 24 white
+* connect 8x female/female jump wire to the NFC reader
+  * SDA white
+  * RST blue
+  * GND black
+  * IRQ brown
+  * SCK yellow
+  * MISO green
+  * MOSI orange
+  * 3.3V red
 
 #### Status LED
 
