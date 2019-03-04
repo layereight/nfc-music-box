@@ -196,6 +196,7 @@ to think upside down. **TODO: add photos**
 
 ### Install NFC Reader Software on your Volumio
 
+* **TODO: needs update, all of this can be done with an Ansible playbook now**
 * install MFRC522-trigger software from https://github.com/layereight/MFRC522-trigger
 * do all the prerequisites first https://github.com/layereight/MFRC522-trigger#prerequisites
 * the purpose of the software is to detect NFS tags and call the volumio REST API to trigger certain
@@ -303,5 +304,6 @@ $ cat ~/devel/MFRC522-trigger/MFRC522-trigger.log
 
 ### pi-shutdown
 
+* trigger a shutdown when you press the push button
 * https://github.com/layereight/pi-shutdown
-* TODO
+* **TODO**
