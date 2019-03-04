@@ -113,8 +113,14 @@ to think upside down. **TODO: add photos**
 
 #### Push Button
 
-* cut 2 times the right length of copper wire, the length depends on what ranges you will have to span in your case later
+* cut 2 times the right length of copper wire, the length depends on what ranges you will have to span in your case
+  later
 * dismantle and tin-coat all 4 ends
+* solder one wire to each connector of the push button
+* solder the free ends of the wires to the Raspberry Pi
+  * pin 5
+  * pin 9 (GND)
+* polarity doesn't matter, it's just a push button
 
 #### Power Supply Buffer
 
