@@ -138,6 +138,11 @@ to think upside down. **TODO: add photos**
 * this is why we'll need a small buffer to cover those small interruptions
 * **TODO: how to wire the capacitors and inductor, this section is still in development**
 
+#### Hifiberry Aplifier
+
+* simply mount the Hifiberry aplifier to the multi-pin connector (that you soldered earlier) on the upper side of the
+  Raspberry Pi
+
 ## Software
 
 ### Download, install and configure Volumio
