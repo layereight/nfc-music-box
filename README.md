@@ -1,6 +1,8 @@
 # nfc-music-box
 
-This tutorial shows how to build a music box for kids based on Raspberry Pi and NFC tags.
+This tutorial shows how to build a music box (not only) for kids based on Raspberry Pi and NFC tags. If you have the
+impression that the how-to is unclear in certain parts or you're missing something, feel free to write an issue or
+simply create a pull request. Helping hands are highly appreciated.
 
 <!--ts-->
 * [Hardware](#hardware)
@@ -42,12 +44,12 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 | 4x Spacer 10mm | ![Spacer](images/14_spacer.jpg?raw=true) | 0.92 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/bauelemente/abstandshuelse-metal-mit-gewinde-innen-m2-5?number=TFF-M2.5X10</li></ul> |
 | 8x Screw 5mm | ![Screw](images/15_screw.jpg?raw=true) | 0.32 | <ul> <li><https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/bauelemente/schraube-mit-flansch-kopf-kugel-m2-5x5/li></ul> |
 | 8x Washer | ![Washer](images/16_washer.jpg?raw=true) | 0.24 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/bauelemente/unterlegscheibe-kunstoff-rund-m2-5-d6mm-h0-5mm</li></ul> |
-| Dupont Jump Wire male/male | ![Jump Wire male](images/17_jumpwiremale.jpg?raw=true) | 2.90 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/kabel-adapter/gpio-csi-dsi-kabel/40pin-jumper/dupont-kabel-male-male-trennbar</li></ul> |
-| Dupont Jump Wire female/female | ![Jump Wire female](images/18_jumpwirefemale.jpg?raw=true) | 2.90 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/kabel-adapter/gpio-csi-dsi-kabel/40pin-jumper/dupont-kabel-female-female-trennbar</li></ul> |
-| Braided Copper Wire | ![Copper Wire](images/181_copperwire.jpg?raw=true) | 0.69 | <ul> <li>https://www.sertronics-shop.de/bauelemente/mechanische-bauelemente/kabel-leitungen/kupferlitze-isoliert-1x0-14mm-10m</li></ul> |
+| Dupont Jump Wire male/female | ![Jump Wire male](images/17_jumpwiremalefemale.jpg?raw=true) | 2.90 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/kabel-adapter/gpio-csi-dsi-kabel/40pin-jumper/dupont-kabel-male-150-female-trennbar</li></ul> |
+| Braided Copper Wire | ![Copper Wire](images/18_copperwire.jpg?raw=true) | 0.69 | <ul> <li>https://www.sertronics-shop.de/bauelemente/mechanische-bauelemente/kabel-leitungen/kupferlitze-isoliert-1x0-14mm-10m</li></ul> |
 | Switch | ![Switch](images/19_switch.jpg?raw=true) | 0.55 | <ul> <li>https://www.sertronics-shop.de/bauelemente/schalter-taster/kippschalter/subminiatur-kippschalter-2-pin-ein-aus</li></ul> |
 | Push Button | ![Push Button](images/20_pushbutton.jpg?raw=true) | 0.48 | <ul> <li>https://www.sertronics-shop.de/bauelemente/schalter-taster/drucktaster/mini-drucktaster-1-polig-schliesser</li></ul> |
 | 1x LED | ![LED](images/21_led.jpg?raw=true) | 0.10 | <ul> <li>https://www.conrad.de/de/everlight-opto-333-2sygds530-e2-led-bedrahtet-gruen-rund-5-mm-80-mcd-30-20-ma-2-v-156238.html</li></ul> |
+| 1x 1K Ohm Resistor | ![Resistor](images/21_resistor.jpg?raw=true) | 0.06 | <ul> <li>https://www.sertronics-shop.de/bauelemente/passive-bauelemente/widerstaende/metallschichtwiderstaende/0-6w-1/1k-9k-ohm/metallschichtwiderstand-1-0k-ohm-0-6w-1-0207-axial-durchsteckmontage</li></ul> |
 | Case | ![Case](images/22_case.jpg?raw=true) |  | Possibilities are limitless. :-) See https://github.com/MiczFlor/RPi-Jukebox-RFID/issues/5 (beware, very long loading time) for some inspiration. |
 | Figures | ![Figure](images/23_figure.jpg?raw=true) |  | Optional. In case you wanna have physical objects you can attach your NFC stickers to. Again possibilities are limitless. |
 
@@ -59,7 +61,7 @@ This tutorial shows how to build a music box for kids based on Raspberry Pi and 
 
 Since the Hifiberry Amplifier will take the whole multi-pin connector on the upper side of the Raspberry Pi, we will
 have to solder all the other connections to the bottom side. So when it comes to pin numbering you will always have
-to think upside down.
+to think upside down. **TODO: add photos**
 
 #### Multi-Pin Connector
 
@@ -69,14 +71,14 @@ to think upside down.
 
 * cut 2 times the right length of speaker cable (or just standard copper wire) for the speakers
 * dismantle and tin-coat all 8 ends
-* solder the cables to the speakers (if you have speaker cable, the + is usually marked in red)
+* solder the cables to the speakers (if you have speaker cable, the anode + is usually marked in red)
 
 #### NFC Reader
 
 * there is a 8-pin connector for the NFC reader board, that we need to solder
 * depending where and how you wanna put the NFC reader in you case later, you have do decide to which side of the board
   the connector should face
-* solder 8x male/male jump wire to the Raspberry Pi
+* solder 8x the male side of jump wire to the Raspberry Pi, also see https://github.com/ondryaso/pi-rc522#connecting
   * pin 17 red
   * pin 19 orange
   * pin 21 green
@@ -85,7 +87,7 @@ to think upside down.
   * pin 20 black
   * pin 22 blue
   * pin 24 white
-* connect 8x female/female jump wire to the NFC reader
+* connect 8x the female side of the jump wire to the NFC reader
   * SDA white
   * RST blue
   * GND black
@@ -94,6 +96,8 @@ to think upside down.
   * MISO green
   * MOSI orange
   * 3.3V red
+* note: depending on which range you will have to span in your case, you might either want to buy longer jump wire or
+  simply connect 2 jump wires one after another
 
 #### Status LED
 
@@ -114,9 +118,19 @@ to think upside down.
 
 #### Power Supply Buffer
 
-* TODO
-
-* TODO: add photos
+* note: the buffering capacitors (and the inductor) are just used to cover scenarios where you wanna charge the 
+  powerbank while the Raspberry Pi is running (at the same time), when you're charging your powerbank with the Raspberry
+  Pi switched off you may not need them
+* to have our music box portable we've bouhgt a special kind of powerbank as power supply, they are called 
+  charge-through or pass-through powerbanks, they have the ability to deliver power and being charged at the same time
+* also they do not need a button on the powerbank being pressed to activate power delivery
+* however, almost all of these powerbanks I've seen cannot be used as 
+  [uninterruptible power supply](https://en.wikipedia.org/wiki/Uninterruptible_power_supply) (UPS) directly
+* when you unplug the external power supply after charging, they will discontinue to deliver power to the connected
+  device they are charging for a very short moment, for a sensible Raspberry Pi this moment is too long and it will
+  simply shut off and restart 
+* this is why we'll need a small buffer to cover those small interruptions
+* **TODO: how to wire the capacitors and inductor, this section is still in development**
 
 ## Software
 
