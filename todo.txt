@@ -1,13 +1,13 @@
 Todo
 
-* hardware assembly docu
-* more hardware photos - Camera !!!
 * update 2 docus
 * pi-shutdown
 * roadmap MFRC522-trigger
-* add resistor to shopping list
+* hardware assembly docu
+* more hardware photos
 
 Done
 
 * component shopping list
 * raspi wiring diagram
+* add resistor to shopping list
