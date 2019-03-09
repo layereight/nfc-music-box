@@ -196,66 +196,80 @@ to think upside down. **TODO: add photos**
 
 ### Install NFC Reader Software on your Volumio
 
-* **TODO: needs update, all of this can be done with an Ansible playbook now**
-* install MFRC522-trigger software from https://github.com/layereight/MFRC522-trigger
-* do all the prerequisites first https://github.com/layereight/MFRC522-trigger#prerequisites
 * the purpose of the software is to detect NFS tags and call the volumio REST API to trigger certain
   actions; e.g. play playlists, stop playback, ...
-* for installation, ssh into your music box
-  * `ssh volumio@music-box.local`, default password is "volumio"
-  * 
-    ```bash
-    volumio@music-box:~$ mkdir devel
-    volumio@music-box:~$ cd devel/
-    volumio@music-box:~/devel$ git clone https://github.com/layereight/MFRC522-trigger.git
-    Cloning into 'MFRC522-trigger'...
-    remote: Enumerating objects: 69, done.
-    remote: Counting objects: 100% (69/69), done.
-    remote: Compressing objects: 100% (46/46), done.
-    remote: Total 117 (delta 21), reused 56 (delta 12), pack-reused 48
-    Receiving objects: 100% (117/117), 263.56 KiB | 0 bytes/s, done.
-    Resolving deltas: 100% (40/40), done.
-    Checking connectivity... done.
-    volumio@music-box:~/devel$ cd MFRC522-trigger/
-    volumio@music-box:~/devel/MFRC522-trigger$ cp config.json.sample config.json
-    ```  
-* on your local machine also clone the repo https://github.com/layereight/MFRC522-trigger
+* we will use Ansible to install the software on the Raspberry Pi, Ansible is an automation tool, if you wanna know
+  more about it have a look at https://docs.ansible.com/ansible/latest/index.html
+* on your local machine clone the repo https://github.com/layereight/MFRC522-trigger
 ```
 $ git clone https://github.com/layereight/MFRC522-trigger.git
 $ cd MFRC522-trigger/ansible
-$ vi env/volumio/inventory
+$ vi inventory
 ```
-* replace the the contents of the file *inventory*
+* replace the the contents of the file *inventory* to point to your music box (e.g. music-box.local)
 ```
 [volumio]
 music-box.local ansible_user=volumio ansible_ssh_pass=volumio ansible_sudo_pass=volumio
 ```
-* execute the ansible playbook
+* execute the ansible playbook, it runs for roughly 12 minutes
 ```
-$ ansible-playbook -i env/volumio/inventory MFRC522-trigger.yml 
+$ ansible-playbook -i inventory MFRC522-trigger.yml 
 
-PLAY [Install MFRC522-trigger as systemd service] *******************************
+PLAY [Install prerequisite software] ************************************************
 
-TASK [systemd : Copy custom systemd service file] *******************************
-changed: [volumio.local]
+TASK [Run apt-get update if cache is older than a week] *****************************
+ok: [music-box.local]
 
-TASK [systemd : Enable custom systemd service] **********************************
-changed: [volumio.local]
+TASK [Install prerequisite debian packages] *****************************************
+changed: [music-box.local]
 
-TASK [systemd : Copy custom systemd service file] *******************************
-changed: [volumio.local]
+TASK [Install prerequisite pip packages] ********************************************
+changed: [music-box.local]
 
-TASK [systemd : Enable custom systemd service] **********************************
-changed: [volumio.local]
+TASK [Install pi-rc522 python library] **********************************************
+changed: [music-box.local]
 
-TASK [systemd : Copy custom systemd service file] *******************************
-skipping: [volumio.local]
+PLAY [Prepare Raspberry Pi's /boot/config.txt] **************************************
 
-TASK [systemd : Enable custom systemd service] **********************************
-skipping: [volumio.local]
+TASK [Alter /boot/config.txt] *******************************************************
+changed: [music-box.local]
 
-PLAY RECAP **********************************************************************
-volumio.local              : ok=4    changed=4    unreachable=0    failed=0   
+TASK [Reboot the machine when /boot/config.txt was changed] *************************
+changed: [music-box.local]
+
+PLAY [Clone MFRC522-trigger from github] ********************************************
+
+TASK [Create devel directory] *******************************************************
+changed: [music-box.local]
+
+TASK [Clone MFRC522-trigger from github] ********************************************
+changed: [music-box.local]
+
+TASK [Copy config.json from sample file] ********************************************
+changed: [music-box.local]
+
+PLAY [Install MFRC522-trigger as systemd service] ***********************************
+
+TASK [systemd : Copy custom systemd service file] ***********************************
+changed: [music-box.local]
+
+TASK [systemd : Enable custom systemd service] **************************************
+changed: [music-box.local]
+
+TASK [systemd : Copy custom systemd service file] ***********************************
+changed: [music-box.local]
+
+TASK [systemd : Enable custom systemd service] **************************************
+changed: [music-box.local]
+
+TASK [systemd : Copy custom systemd service file] ***********************************
+skipping: [music-box.local]
+
+TASK [systemd : Enable custom systemd service] **************************************
+skipping: [music-box.local]
+
+PLAY RECAP **************************************************************************
+music-box.local            : ok=13   changed=12   unreachable=0    failed=0
 
 ```
 
