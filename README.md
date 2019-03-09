@@ -1,8 +1,13 @@
 # nfc-music-box
 
-This tutorial shows how to build a music box (not only) for kids based on Raspberry Pi and NFC tags. If you have the
-impression that the how-to is unclear in certain parts or you're missing something, feel free to write an issue or
-simply create a pull request. Helping hands are highly appreciated.
+This tutorial shows how to build a music box (not only) for kids based on Raspberry Pi and NFC tags. The software is
+mainly based on [Volumio](https://volumio.org/) which is a very nice music player distribution for the Raspberry Pi.
+Another small piece of software called [MFRC522-trigger](https://github.com/layereight/MFRC522-trigger) detects NFC
+tags with a NFC reader and triggers certain actions in [Volumio](https://volumio.org/)
+(e.g. play playlists, stop playback).
+
+If you have the impression that the how-to is unclear in certain parts or you're missing something, feel free to write
+an issue or simply create a pull request. Helping hands are highly appreciated.
 
 <!--ts-->
 * [Hardware](#hardware)
@@ -36,7 +41,7 @@ simply create a pull request. Helping hands are highly appreciated.
 | Hifiberry MiniAmp | ![Hifiberry](images/06_hifiberry.jpg?raw=true) | 13.90 - 20.90 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/erweiterungsboards/hifiberry/hifiberry-miniamp</li> <li>https://www.hifiberry.com/shop/boards/miniamp/</li> </ul> |
 | 2x Speakers 3W | ![Speaker](images/07_speaker.jpg?raw=true) | 5.24 - 9.32 | <ul> <li>https://www.exp-tech.de/zubehoer/audio/5921/lautsprecher-3-durchmesser-4-ohm-3-watt</li> <li>https://www.amazon.de/Adafruit-Speaker-Diameter-Watt-ADA1314/dp/B00QSIYXLK/ref=sr_1_22?s=ce-de&ie=UTF8&qid=1544892282&sr=1-22&keywords=3w+lautsprecher</li></ul> |
 | Speaker Cable | ![Speaker Cable](images/08_speakercable.jpg?raw=true) |  | Optional. Simple copper wire might be enough for 3W speakers. <ul> <li>https://www.sertronics-shop.de/audio-video/verlegekabel-rollenware/lautsprecherkabel/lautsprecherkabel-transparent-cu-25-m-querschnitt-2-x-0-75-mm2</li></ul> |
-| Powerbank (charge-through/pass-through) | ![Powerbank](images/09_powerbank.jpg?raw=true) | 11.99 - 13.49 | <ul>https://www.conrad.de/de/intenso-slim-s-10000-powerbank-zusatzakku-lipo-10000-mah-1387339.html</li> <li>https://www.amazon.de/Intenso-Powerbank-Ladeger%C3%A4t-Smartphone-Digitalkamera-schwarz/dp/B015CIZEF0/ref=sr_1_cc_1?s=aps&ie=UTF8&qid=1544891786&sr=1-1-catcorr&keywords=Intenso%2BSlim%2B10000&th=1</li></ul> |
+| Powerbank (charge-through/pass-through) | ![Powerbank](images/09_powerbank.jpg?raw=true) | 11.99 - 13.49 | <ul><li>https://www.conrad.de/de/intenso-slim-s-10000-powerbank-zusatzakku-lipo-10000-mah-1387339.html</li> <li>https://www.amazon.de/Intenso-Powerbank-Ladeger%C3%A4t-Smartphone-Digitalkamera-schwarz/dp/B015CIZEF0/ref=sr_1_cc_1?s=aps&ie=UTF8&qid=1544891786&sr=1-1-catcorr&keywords=Intenso%2BSlim%2B10000&th=1</li></ul> |
 | 2x E Capacitor 4700 µF 6.3V | ![E Capacitor](images/10_ecapacitor.jpg?raw=true) | 0.37 - 2.09 | <ul> <li>https://www.conrad.de/de/yageo-sy006m4700b5s-1330-elektrolyt-kondensator-radial-bedrahtet-5-mm-4700-f-63-v-20-o-x-h-13-mm-x-30-mm-1-st-442651.html</li> <li>https://www.exp-tech.de/zubehoer/halbleiter/7830/4700uf-10v-elektrolytkondensator</li></ul> |
 | Inductor 33 µH 1,5A | ![Inductor](images/11_inductor.jpg?raw=true) | 0.41 | <ul> <li>https://www.conrad.de/de/tru-components-tc-07hcp-330m-50203-induktivitaet-radial-bedrahtet-rastermass-5-mm-33-h-15-a-1-st-1589089.html</li></ul> |
 | Micro-USB Power Supply | ![Power Supply](images/12_powersupply.jpg?raw=true) | 6.99 - | <ul> <li>https://www.conrad.de/de/hn-power-hnp06-microusbl6-hnp06-microusbl6-usb-ladegeraet-steckdose-ausgangsstrom-max-1500-ma-1-x-micro-usb-stabilisie-1527545.html</li> <li>https://www.amazon.de/Aukru-Netzadapter-Ladeger%C3%A4t-Raspberry-Motorola/dp/B013FOYNSM/ref=sr_1_3?ie=UTF8&qid=1551363590&sr=8-3&keywords=micro+usb+netzteil</li></ul> |
