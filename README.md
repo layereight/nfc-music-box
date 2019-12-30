@@ -304,7 +304,7 @@ music-box.local            : ok=13   changed=12   unreachable=0    failed=0
 * the software should be running, check whether the software is running
 ```
 $ ps awwwx | grep python
-15269 ?        Ssl    0:03 /usr/bin/python /home/volumio/devel/MFRC522-trigger/MFRC522-trigger.py
+15269 ?        Ssl    0:03 python3 /home/volumio/devel/MFRC522-trigger/MFRC522-trigger.py
 ``` 
 * hold 1 or 2 NFC tags against your NFC reader
 * have a look a the MFRC522-trigger logfile, it should look something like this
