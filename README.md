@@ -84,14 +84,14 @@ to think upside down. **TODO: add photos**
 * depending where and how you wanna put the NFC reader in you case later, you have do decide to which side of the board
   the connector should face
 * solder 8x the male side of jump wire to the Raspberry Pi, also see https://github.com/ondryaso/pi-rc522#connecting
-  * pin 17 red
-  * pin 19 orange
-  * pin 21 green
-  * pin 23 yellow
-  * pin 18 brown
-  * pin 20 black
-  * pin 22 blue
-  * pin 24 white
+  * pin 17 red (3.3V power)
+  * pin 19 orange (GPIO10, SPI MOSI)
+  * pin 21 green (GPIO9, SPI MISO)
+  * pin 23 yellow (GPIO11, SPI SCKL)
+  * pin 18 brown (GPIO24, IRQ)
+  * pin 20 black (GND)
+  * pin 22 blue (GPIO25, RST)
+  * pin 24 white (GPIO8, SPI CE0)
 * connect 8x the female side of the jump wire to the NFC reader
   * SDA white
   * RST blue
@@ -113,19 +113,25 @@ to think upside down. **TODO: add photos**
 * now when soldering the cables to the Raspberry Pi, you will have to consider the polarity of the LED
 * the cathode (-) is the side with the slidely shorter pin that is also flat on the LED's head
 * the anode (+) is simply the other side
-* the cable on the cathode side of the LED goes to pin 14 (GND)
-* the cable on the anode side of the LED goes to pin 8
+* the cable on the cathode (-) side of the LED goes to pin 14 (GND)
+* the cable on the anode (+) side of the LED goes to pin 8 (GPIO24, UART0 TXD)
 
-#### Push Button
+#### Push Buttons
 
-* cut 2 times the right length of copper wire, the length depends on what ranges you will have to span in your case
+* cut 6 times the right length of copper wire, the length depends on what ranges you will have to span in your case
   later
-* dismantle and tin-coat all 4 ends
-* solder one wire to each connector of the push button
-* solder the free ends of the wires to the Raspberry Pi
-  * pin 5
+* dismantle and tin-coat all 12 ends
+* solder one wire to each connector of the push buttons
+* solder the free ends of the shutdown button to the Raspberry Pi
+  * pin 7 (GPIO4)
   * pin 9 (GND)
-* polarity doesn't matter, it's just a push button
+* solder the free ends of the vol- button to the Raspberry Pi
+  * pin 29 (GPIO5)
+  * pin 30 (GND)
+* solder the free ends of the vol+ button to the Raspberry Pi
+  * pin 33 (GPIO13)
+  * pin 34 (GND)
+* polarity doesn't matter, they are just push buttons
 
 #### Power Supply Buffer
 
