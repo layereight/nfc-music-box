@@ -151,8 +151,16 @@ to think upside down. **TODO: add photos**
 
 #### Hifiberry Aplifier
 
-* simply mount the Hifiberry aplifier to the multi-pin connector (that you soldered earlier) on the upper side of the
+* simply mount the Hifiberry Miniamp aplifier to the multi-pin connector (that you soldered earlier) on the upper side of the
   Raspberry Pi
+* the Hifiberry Miniamp uses following pins
+  * pin 12 (GPIO18)
+  * pin 35 (GPIO19)
+  * pin 36 (GPIO16)
+  * pin 37 (GPIO26)
+  * pin 38 (GPIO20)
+  * pin 40 (GPIO21)
+* also see https://www.hifiberry.com/docs/hardware/gpio-usage-of-hifiberry-boards/
 
 ## Software
 
