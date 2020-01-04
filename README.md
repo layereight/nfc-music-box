@@ -162,6 +162,13 @@ to think upside down. **TODO: add photos**
   * pin 40 (GPIO21)
 * also see https://www.hifiberry.com/docs/hardware/gpio-usage-of-hifiberry-boards/
 
+#### MPU6050
+
+* the MPU-6050 is a digital accelerometer and gyroscope
+* the use of the MPU6050 module can be considered experimental and is totally optional
+* it is used for additional control of the music box by motion gestures
+* also see https://github.com/layereight/MPU6050-trigger
+
 ## Software
 
 ### Download, install and configure Volumio
