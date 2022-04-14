@@ -227,15 +227,15 @@ to think upside down. **TODO: add photos**
   actions; e.g. play playlists, stop playback, ...
 * we will use Ansible to install the software on the Raspberry Pi, Ansible is an automation tool, if you wanna know
   more about it have a look at https://docs.ansible.com/ansible/latest/index.html
-* on your local machine clone the repo https://github.com/layereight/MFRC522-trigger
+* on your local machine (not the Raspberry Pi) clone the repo https://github.com/layereight/MFRC522-trigger
 ```
 $ git clone https://github.com/layereight/MFRC522-trigger.git
 $ cd MFRC522-trigger/ansible
-$ vi inventory
+$ vim inventory
 ```
-* replace the the contents of the file *inventory* to point to your music box (e.g. music-box.local)
+* replace the contents of the file *inventory* to point to your music box (e.g. music-box.local)
 ```
-[volumio]
+[my_pi]
 music-box.local ansible_user=volumio ansible_ssh_pass=volumio ansible_sudo_pass=volumio
 ```
 * execute the ansible playbook, it runs for roughly 12 minutes
@@ -296,8 +296,7 @@ TASK [systemd : Enable custom systemd service] *********************************
 skipping: [music-box.local]
 
 PLAY RECAP **************************************************************************
-music-box.local            : ok=13   changed=12   unreachable=0    failed=0
-
+music-box.local: ok=12 changed=11 unreachable=0 failed=0 skipped=2 rescued=0 ignored=0
 ```
 
 ### Copy Content to your Music Box
