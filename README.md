@@ -174,16 +174,17 @@ to think upside down. **TODO: add photos**
 ### Download, install and configure Volumio
 
 * download and install volumio: https://volumio.org/get-started/
+* current version of Volumio is 3.x
 * e.g. for linux:
-  * unzip the disk image `unzip volumio-2.502-2018-10-31-pi.img.zip` 
+  * unzip the disk image `unzip Volumio-3.251-2022-03-31-pi.zip` 
   * insert the sd-card and find its device `lsblk`
-  * copy the image to sd-card, e.g. `sudo dd if=volumio-2.502-2018-10-31-pi.img of=/dev/mmcblk0`  
+  * copy the image to sd-card, e.g. `sudo dd if=Volumio-3.251-2022-03-31-pi.img of=/dev/mmcblk0 status=progress`  
 * start, configure volumio, also see https://volumio.org/get-started/
   * on the very first boot of Volumio and on a Raspberry Pi with on-board WiFi, Volumio will enable
-    a Wifi Access Point called "Volumio"
-  * when Volumio boots up you should be able to see the "Volumio" AP, e.g. from your Laptop
-  * connect to the "Volumio" AP, the default password is "volumio2"
-  * open a browser http://volumio.local/
+    a Wifi Access Point called **Volumio**
+  * when Volumio boots up you should be able to see the **Volumio** AP, e.g. from your Laptop
+  * connect to the **Volumio** AP, the default password is "volumio2"
+  * open a browser http://volumio.local/ or http://192.168.211.1/
 * do the Volumio setup wizard
   * chose a language
   * (re-)name your box, let's say to **music-box**
