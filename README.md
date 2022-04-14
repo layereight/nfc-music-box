@@ -342,8 +342,10 @@ $ cat ~/devel/MFRC522-trigger/MFRC522-trigger.log
 * restart MFRC522-trigger `sudo systemctl restart MFRC522-trigger`
 * hold the same NFC tags again against the reader, actions should be triggered now
 
-### pi-shutdown
+### gpio-trigger
 
-* trigger a shutdown when you press the push button
-* https://github.com/layereight/pi-shutdown
-* **TODO**
+* https://github.com/layereight/gpio-trigger
+* trigger actions when you press the push buttons, e.g.:
+  * increase volume
+  * decrease volume
+  * trigger a system shutdown
