@@ -29,34 +29,51 @@ an issue or simply create a pull request. Helping hands are highly appreciated.
 
 ## Hardware
 
+### A Note on supported Raspberry Pi Hardware
+
+As of [Version 4](https://volumio.com/volumio-4-os/), Volumio dropped support for Raspberry Pi 1 and Raspberry Pi Zero (W).
+I suppose this is due to an older hardware architecture. Raspberry Pi 1 and Raspberry Pi Zero (W) have CPUs with 32bit
+ARMv6 architecture whereas newer Raspberry Pi models use 64bit ARMv8 architecture. The first version of the Raspberry Pi 2
+is a bit of an exception since it has a 32bit ARMv7 architecture (haven't tried to install Volumio OS 4 on one of these).
+Also see this detailed [Raspberry Pi Hardware models overview](https://de.wikipedia.org/wiki/Raspberry_Pi#Raspberry-Pi-Modelle).
+
+My original build in fact used a Raspberry Pi Zero W. Due to the limitation of Volumio OS 4 I had to replace
+the Raspberry Pi Zero W with a Raspberry Pi Zero 2 W. I stuck with the (newer) Zero model since my build is portable and
+the Pi Zero 2 W still has the lowest power consumption compared to all other newer models.
+
+Please note that this hardware limitation only applies to [Volumio OS](https://volumio.org/). The other software part of
+this project [MFRC522-trigger](https://github.com/layereight/MFRC522-trigger) doesn't have this limitation. So if you
+just want to detect NFC tags and control/trigger something different than Volumio, feel free to also use older Raspberry Pi
+models.
+
 ### Components
 
-| Item | Picture | Price (EUR) | Links |
-| ---- | ------- | ----- | ----- |
-| Raspberry Pi Zero W | ![Raspberry Pi Zero W](images/01_pizerow.jpg?raw=true) | 10.35 - 17.49 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-zero-w</li> <li>https://www.conrad.de/de/raspberry-pi-zero-wh-512-mb-1667360.html</li> </ul> |
-| Multi-pin Connector | ![Multi-pin Connector](images/02_multipinconnector.jpg?raw=true) | 0.40 | <ul> <li>https://www.sertronics-shop.de/bauelemente/steckverbinder/stift-buchsenleisten-jumper/stiftleiste-2x-20-polig-rm-2-54-gerade</li> </ul> |
-| MicroSD Card (min. 8GB) | ![MicroSD Card](images/03_microsd.jpg?raw=true) | 4.99 - 7.85 | <ul> <li>https://www.conrad.de/de/transcend-premium-400x-microsdhc-karte-16-gb-class-10-uhs-i-284235.html</li> <li>https://www.sertronics-shop.de/computer/speicherkarten-usb-sticks/microsd-karten/sandisk-ultra-micro-sdhc-a1-98mb/s-class-10-speicherkarte-adapter-16gb</li> </ul> |
-| RC522 NFC Reader | ![NFC Reader](images/04_nfcreader.jpg?raw=true) | 3.80 - 4.99 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/module-sensoren/rfid-lesegeraet-mit-spi-schnittstelle-inkl.-karte-dongle</li> <li>https://www.amazon.de/AZDelivery-Reader-Arduino-Raspberry-gratis/dp/B01M28JAAZ/ref=sr_1_fkmr0_2?ie=UTF8&qid=1544891440&sr=8-2-fkmr0&keywords=rfid%2Bleseger%C3%A4t%2BMFRC522&th=1</li> </ul> |
-| NFC Tags | ![NFC Tags](images/05_nfctag.jpg?raw=true) | 0.69 - 1.10 | <ul> <li>https://www.shopnfc.com/de/nfc-stickers/32-12mm-micro-ntag213-stickers.html</li> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/sonstiges/rfid-aufkleber-rund-oe30mm-13-56mhz-1kb</li> <li>https://www.amazon.de/gp/product/B07G42RD2R/ref=oh_aui_detailpage_o05_s01?ie=UTF8&psc=1</li> </ul> |
-| Hifiberry MiniAmp | ![Hifiberry](images/06_hifiberry.jpg?raw=true) | 13.90 - 20.90 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/erweiterungsboards/hifiberry/hifiberry-miniamp</li> <li>https://www.hifiberry.com/shop/boards/miniamp/</li> </ul> |
-| 2x Speakers 3W | ![Speaker](images/07_speaker.jpg?raw=true) | 5.24 - 9.32 | <ul> <li>https://www.exp-tech.de/zubehoer/audio/5921/lautsprecher-3-durchmesser-4-ohm-3-watt</li> <li>https://www.amazon.de/Adafruit-Speaker-Diameter-Watt-ADA1314/dp/B00QSIYXLK/ref=sr_1_22?s=ce-de&ie=UTF8&qid=1544892282&sr=1-22&keywords=3w+lautsprecher</li></ul> |
-| Speaker Cable | ![Speaker Cable](images/08_speakercable.jpg?raw=true) |  | Optional. Simple copper wire might be enough for 3W speakers. <ul> <li>https://www.sertronics-shop.de/audio-video/verlegekabel-rollenware/lautsprecherkabel/lautsprecherkabel-transparent-cu-25-m-querschnitt-2-x-0-75-mm2</li></ul> |
-| Powerbank (charge-through/pass-through) | ![Powerbank](images/09_powerbank.jpg?raw=true) | 11.99 - 13.49 | <ul><li>https://www.conrad.de/de/intenso-slim-s-10000-powerbank-zusatzakku-lipo-10000-mah-1387339.html</li> <li>https://www.amazon.de/Intenso-Powerbank-Ladeger%C3%A4t-Smartphone-Digitalkamera-schwarz/dp/B015CIZEF0/ref=sr_1_cc_1?s=aps&ie=UTF8&qid=1544891786&sr=1-1-catcorr&keywords=Intenso%2BSlim%2B10000&th=1</li></ul> |
-| 2x E Capacitor 4700 µF 6.3V | ![E Capacitor](images/10_ecapacitor.jpg?raw=true) | 0.37 - 2.09 | <ul> <li>https://www.conrad.de/de/yageo-sy006m4700b5s-1330-elektrolyt-kondensator-radial-bedrahtet-5-mm-4700-f-63-v-20-o-x-h-13-mm-x-30-mm-1-st-442651.html</li> <li>https://www.exp-tech.de/zubehoer/halbleiter/7830/4700uf-10v-elektrolytkondensator</li></ul> |
-| Inductor 33 µH 1,5A | ![Inductor](images/11_inductor.jpg?raw=true) | 0.41 | <ul> <li>https://www.conrad.de/de/tru-components-tc-07hcp-330m-50203-induktivitaet-radial-bedrahtet-rastermass-5-mm-33-h-15-a-1-st-1589089.html</li></ul> |
-| Micro-USB Power Supply | ![Power Supply](images/12_powersupply.jpg?raw=true) | 6.99 - | <ul> <li>https://www.conrad.de/de/hn-power-hnp06-microusbl6-hnp06-microusbl6-usb-ladegeraet-steckdose-ausgangsstrom-max-1500-ma-1-x-micro-usb-stabilisie-1527545.html</li> <li>https://www.amazon.de/Aukru-Netzadapter-Ladeger%C3%A4t-Raspberry-Motorola/dp/B013FOYNSM/ref=sr_1_3?ie=UTF8&qid=1551363590&sr=8-3&keywords=micro+usb+netzteil</li></ul> |
-| Micro-USB Jack | ![Micro USB Jack](images/13_microusbjack.jpg?raw=true) | 3.10 | <ul> <li>https://www.sertronics-shop.de/computer/kabel-adapter/usb/micro-usb/kabel-usb-2.0-micro-b-buchse-zum-einbau-usb-2.0-micro-b-stecker-25-cm</li></ul> |
-| 4x Spacer 10mm | ![Spacer](images/14_spacer.jpg?raw=true) | 0.92 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/bauelemente/abstandshuelse-metal-mit-gewinde-innen-m2-5?number=TFF-M2.5X10</li></ul> |
-| 8x Screw 5mm | ![Screw](images/15_screw.jpg?raw=true) | 0.32 | <ul> <li><https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/bauelemente/schraube-mit-flansch-kopf-kugel-m2-5x5/li></ul> |
-| 8x Washer | ![Washer](images/16_washer.jpg?raw=true) | 0.24 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/bauelemente/unterlegscheibe-kunstoff-rund-m2-5-d6mm-h0-5mm</li></ul> |
-| Dupont Jump Wire male/female | ![Jump Wire male](images/17_jumpwiremalefemale.jpg?raw=true) | 2.90 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/kabel-adapter/gpio-csi-dsi-kabel/40pin-jumper/dupont-kabel-male-150-female-trennbar</li></ul> |
-| Braided Copper Wire | ![Copper Wire](images/18_copperwire.jpg?raw=true) | 0.69 | <ul> <li>https://www.sertronics-shop.de/bauelemente/mechanische-bauelemente/kabel-leitungen/kupferlitze-isoliert-1x0-14mm-10m</li></ul> |
-| Switch | ![Switch](images/19_switch.jpg?raw=true) | 0.55 | <ul> <li>https://www.sertronics-shop.de/bauelemente/schalter-taster/kippschalter/subminiatur-kippschalter-2-pin-ein-aus</li></ul> |
-| Push Button | ![Push Button](images/20_pushbutton.jpg?raw=true) | 0.48 | <ul> <li>https://www.sertronics-shop.de/bauelemente/schalter-taster/drucktaster/mini-drucktaster-1-polig-schliesser</li></ul> |
-| 1x LED | ![LED](images/21_led.jpg?raw=true) | 0.10 | <ul> <li>https://www.conrad.de/de/everlight-opto-333-2sygds530-e2-led-bedrahtet-gruen-rund-5-mm-80-mcd-30-20-ma-2-v-156238.html</li></ul> |
-| 1x 1K Ohm Resistor | ![Resistor](images/21_resistor.jpg?raw=true) | 0.06 | <ul> <li>https://www.sertronics-shop.de/bauelemente/passive-bauelemente/widerstaende/metallschichtwiderstaende/0-6w-1/1k-9k-ohm/metallschichtwiderstand-1-0k-ohm-0-6w-1-0207-axial-durchsteckmontage</li></ul> |
-| Case | ![Case](images/22_case.jpg?raw=true) |  | Possibilities are limitless. :-) See https://github.com/MiczFlor/RPi-Jukebox-RFID/issues/5 (beware, very long loading time) for some inspiration. |
-| Figures | ![Figure](images/23_figure.jpg?raw=true) |  | Optional. In case you wanna have physical objects you can attach your NFC stickers to. Again possibilities are limitless. |
+| Item                                    | Picture                                                          | Price (EUR)   | Links                                                                                                                                                                                                                                                                                                                                                 |
+|-----------------------------------------|------------------------------------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Raspberry Pi Zero 2 W                   | ![Raspberry Pi Zero 2 W](images/01_pizero2w.jpg?raw=true)        | 17.90 - 22.00 | <ul> <li>https://www.berrybase.de/raspberry-pi-zero-2-w</li> <li>https://thepihut.com/products/raspberry-pi-zero-2?variant=41181426909379</li> </ul>                                                                                                                                                                                                  |
+| Multi-pin Connector                     | ![Multi-pin Connector](images/02_multipinconnector.jpg?raw=true) | 0.40          | <ul> <li>https://www.sertronics-shop.de/bauelemente/steckverbinder/stift-buchsenleisten-jumper/stiftleiste-2x-20-polig-rm-2-54-gerade</li> </ul>                                                                                                                                                                                                      |
+| MicroSD Card (min. 8GB)                 | ![MicroSD Card](images/03_microsd.jpg?raw=true)                  | 4.99 - 7.85   | <ul> <li>https://www.conrad.de/de/transcend-premium-400x-microsdhc-karte-16-gb-class-10-uhs-i-284235.html</li> <li>https://www.sertronics-shop.de/computer/speicherkarten-usb-sticks/microsd-karten/sandisk-ultra-micro-sdhc-a1-98mb/s-class-10-speicherkarte-adapter-16gb</li> </ul>                                                                 |
+| RC522 NFC Reader                        | ![NFC Reader](images/04_nfcreader.jpg?raw=true)                  | 3.80 - 4.99   | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/module-sensoren/rfid-lesegeraet-mit-spi-schnittstelle-inkl.-karte-dongle</li> <li>https://www.amazon.de/AZDelivery-Reader-Arduino-Raspberry-gratis/dp/B01M28JAAZ/ref=sr_1_fkmr0_2?ie=UTF8&qid=1544891440&sr=8-2-fkmr0&keywords=rfid%2Bleseger%C3%A4t%2BMFRC522&th=1</li> </ul>   |
+| NFC Tags                                | ![NFC Tags](images/05_nfctag.jpg?raw=true)                       | 0.69 - 1.10   | <ul> <li>https://www.shopnfc.com/de/nfc-stickers/32-12mm-micro-ntag213-stickers.html</li> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/sonstiges/rfid-aufkleber-rund-oe30mm-13-56mhz-1kb</li> <li>https://www.amazon.de/gp/product/B07G42RD2R/ref=oh_aui_detailpage_o05_s01?ie=UTF8&psc=1</li> </ul>                               |
+| Hifiberry MiniAmp                       | ![Hifiberry](images/06_hifiberry.jpg?raw=true)                   | 13.90 - 20.90 | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/erweiterungsboards/hifiberry/hifiberry-miniamp</li> <li>https://www.hifiberry.com/shop/boards/miniamp/</li> </ul>                                                                                                                                                                |
+| 2x Speakers 3W                          | ![Speaker](images/07_speaker.jpg?raw=true)                       | 5.24 - 9.32   | <ul> <li>https://www.exp-tech.de/zubehoer/audio/5921/lautsprecher-3-durchmesser-4-ohm-3-watt</li> <li>https://www.amazon.de/Adafruit-Speaker-Diameter-Watt-ADA1314/dp/B00QSIYXLK/ref=sr_1_22?s=ce-de&ie=UTF8&qid=1544892282&sr=1-22&keywords=3w+lautsprecher</li></ul>                                                                                |
+| Speaker Cable                           | ![Speaker Cable](images/08_speakercable.jpg?raw=true)            |               | Optional. Simple copper wire might be enough for 3W speakers. <ul> <li>https://www.sertronics-shop.de/audio-video/verlegekabel-rollenware/lautsprecherkabel/lautsprecherkabel-transparent-cu-25-m-querschnitt-2-x-0-75-mm2</li></ul>                                                                                                                  |
+| Powerbank (charge-through/pass-through) | ![Powerbank](images/09_powerbank.jpg?raw=true)                   | 11.99 - 13.49 | <ul><li>https://www.conrad.de/de/intenso-slim-s-10000-powerbank-zusatzakku-lipo-10000-mah-1387339.html</li> <li>https://www.amazon.de/Intenso-Powerbank-Ladeger%C3%A4t-Smartphone-Digitalkamera-schwarz/dp/B015CIZEF0/ref=sr_1_cc_1?s=aps&ie=UTF8&qid=1544891786&sr=1-1-catcorr&keywords=Intenso%2BSlim%2B10000&th=1</li></ul>                        |
+| 2x E Capacitor 4700 µF 6.3V             | ![E Capacitor](images/10_ecapacitor.jpg?raw=true)                | 0.37 - 2.09   | <ul> <li>https://www.conrad.de/de/yageo-sy006m4700b5s-1330-elektrolyt-kondensator-radial-bedrahtet-5-mm-4700-f-63-v-20-o-x-h-13-mm-x-30-mm-1-st-442651.html</li> <li>https://www.exp-tech.de/zubehoer/halbleiter/7830/4700uf-10v-elektrolytkondensator</li></ul>                                                                                      |
+| Inductor 33 µH 1,5A                     | ![Inductor](images/11_inductor.jpg?raw=true)                     | 0.41          | <ul> <li>https://www.conrad.de/de/tru-components-tc-07hcp-330m-50203-induktivitaet-radial-bedrahtet-rastermass-5-mm-33-h-15-a-1-st-1589089.html</li></ul>                                                                                                                                                                                             |
+| Micro-USB Power Supply                  | ![Power Supply](images/12_powersupply.jpg?raw=true)              | 6.99 -        | <ul> <li>https://www.conrad.de/de/hn-power-hnp06-microusbl6-hnp06-microusbl6-usb-ladegeraet-steckdose-ausgangsstrom-max-1500-ma-1-x-micro-usb-stabilisie-1527545.html</li> <li>https://www.amazon.de/Aukru-Netzadapter-Ladeger%C3%A4t-Raspberry-Motorola/dp/B013FOYNSM/ref=sr_1_3?ie=UTF8&qid=1551363590&sr=8-3&keywords=micro+usb+netzteil</li></ul> |
+| Micro-USB Jack                          | ![Micro USB Jack](images/13_microusbjack.jpg?raw=true)           | 3.10          | <ul> <li>https://www.sertronics-shop.de/computer/kabel-adapter/usb/micro-usb/kabel-usb-2.0-micro-b-buchse-zum-einbau-usb-2.0-micro-b-stecker-25-cm</li></ul>                                                                                                                                                                                          |
+| 4x Spacer 10mm                          | ![Spacer](images/14_spacer.jpg?raw=true)                         | 0.92          | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/bauelemente/abstandshuelse-metal-mit-gewinde-innen-m2-5?number=TFF-M2.5X10</li></ul>                                                                                                                                                                                             |
+| 8x Screw 5mm                            | ![Screw](images/15_screw.jpg?raw=true)                           | 0.32          | <ul> <li><https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/bauelemente/schraube-mit-flansch-kopf-kugel-m2-5x5/li></ul>                                                                                                                                                                                                                     |
+| 8x Washer                               | ![Washer](images/16_washer.jpg?raw=true)                         | 0.24          | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/bauelemente/unterlegscheibe-kunstoff-rund-m2-5-d6mm-h0-5mm</li></ul>                                                                                                                                                                                                             |
+| Dupont Jump Wire male/female            | ![Jump Wire male](images/17_jumpwiremalefemale.jpg?raw=true)     | 2.90          | <ul> <li>https://www.sertronics-shop.de/raspberry-pi-co/raspberry-pi/kabel-adapter/gpio-csi-dsi-kabel/40pin-jumper/dupont-kabel-male-150-female-trennbar</li></ul>                                                                                                                                                                                    |
+| Braided Copper Wire                     | ![Copper Wire](images/18_copperwire.jpg?raw=true)                | 0.69          | <ul> <li>https://www.sertronics-shop.de/bauelemente/mechanische-bauelemente/kabel-leitungen/kupferlitze-isoliert-1x0-14mm-10m</li></ul>                                                                                                                                                                                                               |
+| Switch                                  | ![Switch](images/19_switch.jpg?raw=true)                         | 0.55          | <ul> <li>https://www.sertronics-shop.de/bauelemente/schalter-taster/kippschalter/subminiatur-kippschalter-2-pin-ein-aus</li></ul>                                                                                                                                                                                                                     |
+| Push Button                             | ![Push Button](images/20_pushbutton.jpg?raw=true)                | 0.48          | <ul> <li>https://www.sertronics-shop.de/bauelemente/schalter-taster/drucktaster/mini-drucktaster-1-polig-schliesser</li></ul>                                                                                                                                                                                                                         |
+| 1x LED                                  | ![LED](images/21_led.jpg?raw=true)                               | 0.10          | <ul> <li>https://www.conrad.de/de/everlight-opto-333-2sygds530-e2-led-bedrahtet-gruen-rund-5-mm-80-mcd-30-20-ma-2-v-156238.html</li></ul>                                                                                                                                                                                                             |
+| 1x 1K Ohm Resistor                      | ![Resistor](images/21_resistor.jpg?raw=true)                     | 0.06          | <ul> <li>https://www.sertronics-shop.de/bauelemente/passive-bauelemente/widerstaende/metallschichtwiderstaende/0-6w-1/1k-9k-ohm/metallschichtwiderstand-1-0k-ohm-0-6w-1-0207-axial-durchsteckmontage</li></ul>                                                                                                                                        |
+| Case                                    | ![Case](images/22_case.jpg?raw=true)                             |               | Possibilities are limitless. :-) See https://github.com/MiczFlor/RPi-Jukebox-RFID/issues/5 (beware, very long loading time) for some inspiration.                                                                                                                                                                                                     |
+| Figures                                 | ![Figure](images/23_figure.jpg?raw=true)                         |               | Optional. In case you wanna have physical objects you can attach your NFC stickers to. Again possibilities are limitless.                                                                                                                                                                                                                             |
 
 ### Wiring Diagram
 
@@ -162,23 +179,17 @@ to think upside down. **TODO: add photos**
   * pin 40 (GPIO21)
 * also see https://www.hifiberry.com/docs/hardware/gpio-usage-of-hifiberry-boards/
 
-#### MPU6050
-
-* the MPU-6050 is a digital accelerometer and gyroscope
-* the use of the MPU6050 module can be considered experimental and is totally optional
-* it is used for additional control of the music box by motion gestures
-* also see https://github.com/layereight/MPU6050-trigger
-
 ## Software
 
 ### Download, install and configure Volumio
 
 * download and install volumio: https://volumio.org/get-started/
-* current version of Volumio is 3.x
+* current version (Dec 2025) of Volumio is 4.x
 * e.g. for linux:
-  * unzip the disk image `unzip Volumio-3.251-2022-03-31-pi.zip` 
+  * unzip the disk image `unzip Volumio-4.073-2025-12-05-pi.zip`
+  * this will create the image file `Volumio-4.073-2025-12-05-pi.img`
   * insert the sd-card and find its device `lsblk`
-  * copy the image to sd-card, e.g. `sudo dd if=Volumio-3.251-2022-03-31-pi.img of=/dev/mmcblk0 status=progress`  
+  * copy the image to sd-card, e.g. `sudo dd if=Volumio-4.073-2025-12-05-pi.img of=/dev/mmcblk0 status=progress`  
 * start, configure volumio, also see https://volumio.org/get-started/
   * on the very first boot of Volumio and on a Raspberry Pi with on-board WiFi, Volumio will enable
     a Wifi Access Point called **Volumio**
@@ -349,3 +360,12 @@ $ cat ~/devel/MFRC522-trigger/MFRC522-trigger.log
   * increase volume
   * decrease volume
   * trigger a system shutdown
+
+## Archive
+
+### MPU6050
+
+* the MPU-6050 is a digital accelerometer and gyroscope
+* the use of the MPU6050 module can be considered experimental and is totally optional
+* it is used for additional control of the music box by motion gestures
+* also see https://github.com/layereight/MPU6050-trigger
