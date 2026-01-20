@@ -10,20 +10,32 @@ If you have the impression that the how-to is unclear in certain parts or you're
 an issue or simply create a pull request. Helping hands are highly appreciated.
 
 <!--ts-->
-* [Hardware](#hardware)
-  * [Components](#components)
-  * [Wiring Diagram](#wiring-diagram)
-  * [Assemble the Components](#assemble-the-components)
-* [Software](#software)
-  * [Download, install and configure Volumio](#download-install-and-configure-volumio)
-  * [Enable volumio ssh access](#enable-volumio-ssh-access)
-  * [Install NFC Reader Software on your Volumio](#install-nfc-reader-software-on-your-volumio)
-  * [Copy Content to your Music Box](#copy-content-to-your-music-box)
-  * [Create Playlists from you Content](#create-playlists-from-you-content)
-  * [Configure MFRC522-trigger to trigger a Volumio Playlist](#configure-mfrc522-trigger-to-trigger-a-volumio-playlist)
-  * [pi-shutdown](#pi-shutdown)
+* [nfc-music-box](#nfc-music-box)
+  * [Hardware](#hardware)
+    * [A Note on supported Raspberry Pi Hardware](#a-note-on-supported-raspberry-pi-hardware)
+    * [Components](#components)
+    * [Wiring Diagram](#wiring-diagram)
+    * [Assemble the Components](#assemble-the-components)
+      * [Multi-Pin Connector](#multi-pin-connector)
+      * [Speaker Cable](#speaker-cable)
+      * [NFC Reader](#nfc-reader)
+      * [Status LED](#status-led)
+      * [Push Buttons](#push-buttons)
+      * [Power Supply Buffer](#power-supply-buffer)
+      * [Hifiberry Aplifier](#hifiberry-aplifier)
+  * [Software](#software)
+    * [Download, install and configure Volumio](#download-install-and-configure-volumio)
+    * [Enable volumio ssh access](#enable-volumio-ssh-access)
+    * [Install NFC Reader Software on your Volumio](#install-nfc-reader-software-on-your-volumio)
+    * [Copy Content to your Music Box](#copy-content-to-your-music-box)
+    * [Create Playlists from you Content](#create-playlists-from-you-content)
+    * [Configure MFRC522-trigger to trigger a Volumio Playlist](#configure-mfrc522-trigger-to-trigger-a-volumio-playlist)
+    * [gpio-trigger](#gpio-trigger)
+  * [Archive](#archive)
+    * [MPU6050](#mpu6050)
 
-<!-- Added by: stefan, at: 2019-02-26T00:54+01:00 -->
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- bash gh-md-toc --indent 2 --insert README.md -->
 
 <!--te-->
 
