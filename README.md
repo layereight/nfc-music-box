@@ -89,7 +89,7 @@ models.
 
 ### Wiring Diagram
 
-![Music Box Wiring Diagram](images/musicbox_bb.jpg?raw=true)
+![Music Box Wiring Diagram v2](images/musicbox_wiring_v2.jpg?raw=true)
 
 ### Assemble the Components
 
@@ -381,3 +381,5 @@ $ cat ~/devel/MFRC522-trigger/MFRC522-trigger.log
 * the use of the MPU6050 module can be considered experimental and is totally optional
 * it is used for additional control of the music box by motion gestures
 * also see https://github.com/layereight/MPU6050-trigger
+
+![Music Box Wiring Diagram v1 with MPU6050](images/musicbox_wiring_v1.jpg?raw=true)
