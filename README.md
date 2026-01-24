@@ -244,83 +244,30 @@ to think upside down. **TODO: add photos**
 * goto http://music-box.local/dev
 * press the "Enable" button for SSH
 
-### Install NFC Reader Software on your Volumio
+### Install the [MFRC522-trigger](https://github.com/layereight/MFRC522-trigger) NFC Reader Software on your Volumio
 
-* the purpose of the software is to detect NFS tags and call the volumio REST API to trigger certain
-  actions; e.g. play playlists, stop playback, ...
+* the purpose of the [MFRC522-trigger](https://github.com/layereight/MFRC522-trigger) software is to detect NFS tags and 
+  call the volumio REST API to trigger certain actions; e.g. play playlists, stop playback, ...
 * we will use Ansible to install the software on the Raspberry Pi, Ansible is an automation tool, if you wanna know
   more about it have a look at https://docs.ansible.com/ansible/latest/index.html
-* on your local machine (not the Raspberry Pi) clone the repo https://github.com/layereight/MFRC522-trigger
-```
-$ git clone https://github.com/layereight/MFRC522-trigger.git
-$ cd MFRC522-trigger/ansible
-$ vim inventory
-```
-* replace the contents of the file *inventory* to point to your music box (e.g. music-box.local)
-```
-[my_pi]
-music-box.local ansible_user=volumio ansible_ssh_pass=volumio ansible_sudo_pass=volumio
-```
-* execute the ansible playbook, it runs for roughly 12 minutes
-```
-$ ansible-playbook -i inventory MFRC522-trigger.yml 
-
-PLAY [Install prerequisite software] ************************************************
-
-TASK [Run apt-get update if cache is older than a week] *****************************
-ok: [music-box.local]
-
-TASK [Install prerequisite debian packages] *****************************************
-changed: [music-box.local]
-
-TASK [Install prerequisite pip packages] ********************************************
-changed: [music-box.local]
-
-TASK [Install pi-rc522 python library] **********************************************
-changed: [music-box.local]
-
-PLAY [Prepare Raspberry Pi's /boot/config.txt] **************************************
-
-TASK [Alter /boot/config.txt] *******************************************************
-changed: [music-box.local]
-
-TASK [Reboot the machine when /boot/config.txt was changed] *************************
-changed: [music-box.local]
-
-PLAY [Clone MFRC522-trigger from github] ********************************************
-
-TASK [Create devel directory] *******************************************************
-changed: [music-box.local]
-
-TASK [Clone MFRC522-trigger from github] ********************************************
-changed: [music-box.local]
-
-TASK [Copy config.json from sample file] ********************************************
-changed: [music-box.local]
-
-PLAY [Install MFRC522-trigger as systemd service] ***********************************
-
-TASK [systemd : Copy custom systemd service file] ***********************************
-changed: [music-box.local]
-
-TASK [systemd : Enable custom systemd service] **************************************
-changed: [music-box.local]
-
-TASK [systemd : Copy custom systemd service file] ***********************************
-changed: [music-box.local]
-
-TASK [systemd : Enable custom systemd service] **************************************
-changed: [music-box.local]
-
-TASK [systemd : Copy custom systemd service file] ***********************************
-skipping: [music-box.local]
-
-TASK [systemd : Enable custom systemd service] **************************************
-skipping: [music-box.local]
-
-PLAY RECAP **************************************************************************
-music-box.local: ok=12 changed=11 unreachable=0 failed=0 skipped=2 rescued=0 ignored=0
-```
+  * on your local machine (not the Raspberry Pi) clone the repo https://github.com/layereight/MFRC522-trigger
+  ```
+  $ git clone https://github.com/layereight/MFRC522-trigger.git
+  $ cd MFRC522-trigger/ansible
+  $ vim inventory
+  ```
+  * replace the contents of the file *inventory* to point to your music box (e.g. music-box.local)
+  ```
+  [my_pi]
+  music-box.local ansible_user=volumio ansible_ssh_pass=volumio ansible_sudo_pass=volumio
+  ```
+  * execute the ansible playbook, it runs for roughly 12 minutes
+  ```
+  $ ansible-playbook -i inventory MFRC522-trigger.yml 
+  ...
+  ```
+* alternatively you can perform all the installation steps manually as described in the repo
+  https://github.com/layereight/MFRC522-trigger
 
 ### Copy Content to your Music Box
 
@@ -354,10 +301,10 @@ $ ps awwwx | grep python
 * have a look a the MFRC522-trigger logfile, it should look something like this
 ```
 $ cat ~/devel/MFRC522-trigger/MFRC522-trigger.log 
-2019-02-24 18:08:39,714 INFO Welcome to MFRC522-trigger!
-2019-02-24 18:08:39,716 INFO Press Ctrl-C to stop.
-2019-02-24 18:11:50,020 WARNING No mapping for tag 1364223230181
-2019-02-24 18:11:54,392 WARNING No mapping for tag 1364215230189
+2026-01-24 18:08:39,714 INFO Welcome to MFRC522-trigger!
+2026-01-24 18:08:39,716 INFO Press Ctrl-C to stop.
+2026-01-24 18:11:50,020 WARNING No mapping for tag 04:84:84:16:BC:2A:81
+2026-01-24 18:11:54,392 WARNING No mapping for tag 04:84:84:16:BC:2A:81
 ```
 * note the NFC tag ids
 * edit MFRC522-trigger's config file: `vi ~/devel/MFRC522-trigger/config.json`
