@@ -26,11 +26,11 @@ an issue or simply create a pull request. Helping hands are highly appreciated.
   * [Software](#software)
     * [Download, install and configure Volumio](#download-install-and-configure-volumio)
     * [Enable volumio ssh access](#enable-volumio-ssh-access)
-    * [Install NFC Reader Software on your Volumio](#install-nfc-reader-software-on-your-volumio)
+    * [Install the MFRC522-trigger NFC Reader Software on your Volumio](#install-the-mfrc522-trigger-nfc-reader-software-on-your-volumio)
     * [Copy Content to your Music Box](#copy-content-to-your-music-box)
     * [Create Playlists from you Content](#create-playlists-from-you-content)
     * [Configure MFRC522-trigger to trigger a Volumio Playlist](#configure-mfrc522-trigger-to-trigger-a-volumio-playlist)
-    * [gpio-trigger](#gpio-trigger)
+    * [Trigger certain actions via GPIO buttons and gpio-trigger](#trigger-certain-actions-via-gpio-buttons-and-gpio-trigger)
   * [Archive](#archive)
     * [MPU6050](#mpu6050)
 
@@ -244,7 +244,7 @@ to think upside down. **TODO: add photos**
 * goto http://music-box.local/dev
 * press the "Enable" button for SSH
 
-### Install the [MFRC522-trigger](https://github.com/layereight/MFRC522-trigger) NFC Reader Software on your Volumio
+### Install the MFRC522-trigger NFC Reader Software on your Volumio
 
 * the purpose of the [MFRC522-trigger](https://github.com/layereight/MFRC522-trigger) software is to detect NFS tags and 
   call the volumio REST API to trigger certain actions; e.g. play playlists, stop playback, ...
@@ -312,7 +312,7 @@ $ cat ~/devel/MFRC522-trigger/MFRC522-trigger.log
 * restart MFRC522-trigger `sudo systemctl restart MFRC522-trigger`
 * hold the same NFC tags again against the reader, actions should be triggered now
 
-### Trigger certain actions via GPIO buttons and [gpio-trigger](https://github.com/layereight/gpio-trigger)
+### Trigger certain actions via GPIO buttons and gpio-trigger
 
 * see the repo https://github.com/layereight/gpio-trigger
 * trigger actions when you press the push buttons, e.g.:
