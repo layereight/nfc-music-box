@@ -49,7 +49,7 @@ ARMv6 architecture whereas newer Raspberry Pi models use 64bit ARMv8 architectur
 is a bit of an exception since it has a 32bit ARMv7 architecture (haven't tried to install Volumio OS 4 on one of these).
 Also see this detailed [Raspberry Pi Hardware models overview](https://de.wikipedia.org/wiki/Raspberry_Pi#Raspberry-Pi-Modelle).
 
-My original build in fact used a Raspberry Pi Zero W. Due to the limitation of Volumio OS 4 I had to replace
+My original build in fact used a Raspberry Pi Zero W. Due to the limitation of Volumio OS 4, I had to replace
 the Raspberry Pi Zero W with a Raspberry Pi Zero 2 W. I stuck with the (newer) Zero model since my build is portable and
 the Pi Zero 2 W still has the lowest power consumption compared to all other newer models.
 
@@ -220,7 +220,7 @@ to think upside down. **TODO: add photos**
     * chose your home Wifi from the list and enter your Wifi password
     * after reboot, Volumio will try to connect to your home Wifi
   * skip the "add your music" step for now
-  * you're done, Volumio will prompt your to reboot your music box
+  * you're done, Volumio will prompt you to reboot your music box
 * after reboot you should already be able to hear the Volumio startup sound when Volumio has 
   booted up
 * connect your laptop back to your home Wifi
