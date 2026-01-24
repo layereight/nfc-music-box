@@ -312,9 +312,9 @@ $ cat ~/devel/MFRC522-trigger/MFRC522-trigger.log
 * restart MFRC522-trigger `sudo systemctl restart MFRC522-trigger`
 * hold the same NFC tags again against the reader, actions should be triggered now
 
-### gpio-trigger
+### Trigger certain actions via GPIO buttons and [gpio-trigger](https://github.com/layereight/gpio-trigger)
 
-* https://github.com/layereight/gpio-trigger
+* see the repo https://github.com/layereight/gpio-trigger
 * trigger actions when you press the push buttons, e.g.:
   * increase volume
   * decrease volume
