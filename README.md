@@ -186,7 +186,7 @@ to think upside down. **TODO: add photos**
   device they are charging for a very short moment, for a sensible Raspberry Pi this moment is too long and it will
   simply shut off and restart 
 * this is why we'll need a small buffer to cover those small interruptions
-* **TODO: how to wire the capacitors and inductor, this section is still in development**
+* **TODO: how to wire the capacitors and inductor**
 
 #### Hifiberry Aplifier
 

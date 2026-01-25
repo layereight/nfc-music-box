@@ -1,13 +1,12 @@
-Todo
+TODO
 
-* update 2 docus
-* pi-shutdown
-* roadmap MFRC522-trigger
+* hardware photos
+* how to wire the power supply buffer
+
+DONE
+
 * hardware assembly docu
-* more hardware photos
-
-Done
-
+* gpio-trigger section
 * component shopping list
 * raspi wiring diagram
 * add resistor to shopping list
