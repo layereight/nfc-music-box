@@ -207,12 +207,12 @@ to think upside down. **TODO: add photos**
 ### Download, install and configure Volumio
 
 * download and install volumio: https://volumio.org/get-started/
-* current version (Dec 2025) of Volumio is 4.x
+* current version (Jan 2026) of Volumio is 4.x
 * e.g. for linux:
-  * unzip the disk image `unzip Volumio-4.073-2025-12-05-pi.zip`
-  * this will create the image file `Volumio-4.073-2025-12-05-pi.img`
+  * unzip the disk image `unzip Volumio-4.084-2025-12-25-pi.zip`
+  * this will create the image file `Volumio-4.084-2025-12-25-pi.img`
   * insert the sd-card and find its device `lsblk`
-  * copy the image to sd-card, e.g. `sudo dd if=Volumio-4.073-2025-12-05-pi.img of=/dev/mmcblk0 status=progress`  
+  * copy the image to sd-card, e.g. `sudo dd if=Volumio-4.084-2025-12-25-pi.img of=/dev/mmcblk0 status=progress`
 * start, configure volumio, also see https://volumio.org/get-started/
   * on the very first boot of Volumio and on a Raspberry Pi with on-board WiFi, Volumio will enable
     a Wifi Access Point called **Volumio**
